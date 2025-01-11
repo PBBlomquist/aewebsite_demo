@@ -1,0 +1,121 @@
+h1 {
+  color: white;
+  font-size: 35px; /* Use px for font size */
+  font-family: 'Sequel Sans', sans-serif; 
+}
+
+h3 {
+  font-size: 20px; /* Use px for font size */
+  font-family: 'Sequel Sans', sans-serif; 
+}
+
+
+body {
+  color: #2D4E8E;
+  font-size: 16px; 
+  font-family: 'Sequel Sans', sans-serif; 
+  display: flex; /* Enable Flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-color: white;
+  background-image: url('assets/images/Hexagon4.svg'); 
+}
+
+.nav-footer-left {
+  background-color: white; 
+  color: gray;
+  font-size: 8px;
+  width: 100%; /* Take up the full width of the container */
+  position: absolute; /* Optional: Positioning for more control */
+  left: 0; /* Align to the left */
+  text-align: center; /* Align text horizontally */
+}
+.my-style {
+  color: black;
+  font-family: 'Sequel Sans', sans-serif; 
+  font-weight: bold;
+  font-style: normal; 
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #ADD8E6;
+}
+
+.highlight {
+  color: #2D4E8E;
+  font-weight: bold;
+  font-style: normal; 
+  font-family: 'Sequel Sans', sans-serif; 
+  font-size: 18px;
+  padding: 2px;
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: underline;
+  text-decoration-color: #ADD8E6;
+}
+
+
+/* Nav bar background */
+.navbar {
+  background-color: #2D4E8E; 
+}
+
+
+/* Colour all non-active text */
+.navbar a {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  padding: 10px;
+  
+}
+
+/* Hover state */
+.navbar a:hover, .navbar .nav-link.active:hover {
+  color: #bfbdbd; /* Tomato color on hover */
+}
+
+/* Dropdown menu items */
+.navbar .dropdown-menu .dropdown-item {
+  color: #424242; /* Default color for dropdown items */
+  padding: 10px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  background-color: white; 
+}
+
+/* Dropdown menu item hover state */
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: black; /* Change text color on hover */
+  background-color: #d3d3d3; /* Add a background color on hover */
+}
+
+
+/* Colour all active text- (Home) */
+.navbar .nav-link.active {
+  color: #bfbdbd; /* Tomato color for the active "Home" button */
+    /*font-weight: bold; /* Optional: Highlight the active state */
+    /*border-bottom: 2px solid #000000; /* Optional: Add underline to active link */
+}
+
+
+/* Dropdown parent when expanded */
+.navbar .dropdown.show .nav-link,
+.navbar .nav-link.dropdown-toggle[aria-expanded="true"] {
+  color: #bfbdbd; /* Change to Grey */
+  /*font-weight: bold;
+  border-bottom: 2px solid #0000FF; /* Optional: Add underline to active link */
+}
+
+
+/* doesn't work? */
+.quarto-announcement-content {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+}
+
+.navbar-brand a {
+  max-height: 100px;
+  padding: 0px;
+}

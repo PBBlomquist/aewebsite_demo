@@ -1,0 +1,32 @@
+[
+  {
+    "listing": "/training/public-courses.html",
+    "items": []
+  },
+  {
+    "listing": "/resources/tutorials.html",
+    "items": []
+  },
+  {
+    "listing": "/about/partners.html",
+    "items": []
+  },
+  {
+    "listing": "/about/governance.html",
+    "items": []
+  },
+  {
+    "listing": "/about/people.html",
+    "items": []
+  },
+  {
+    "listing": "/resources/resources.html",
+    "items": [
+      "/resources/tutorials.html"
+    ]
+  },
+  {
+    "listing": "/training/reviews.html",
+    "items": []
+  }
+]

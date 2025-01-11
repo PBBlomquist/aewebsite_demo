@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>people – Applied Epi</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-leadership_team .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-leadership_team'] = new List('listing-leadership_team', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-wider_team .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      page: 30,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-wider_team'] = new List('listing-wider_team', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-wider_team_mobile .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      page: 30,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-wider_team_mobile'] = new List('listing-wider_team_mobile', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/simple_seethrough.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Applied Epi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="../about/about.html">
+ <span class="dropdown-text">About</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/people.html">
+ <span class="dropdown-text">People</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/governance.html">
+ <span class="dropdown-text">Governance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/partners.html">
+ <span class="dropdown-text">Partners</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/join.html">
+ <span class="dropdown-text">Join us</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-training" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Training</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-training">    
+        <li>
+    <a class="dropdown-item" href="../training/training.html">
+ <span class="dropdown-text">Course overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../training/public-courses.html">
+ <span class="dropdown-text">Upcoming Courses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../training/private-courses.html">
+ <span class="dropdown-text">Private Courses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../training/reviews.html">
+ <span class="dropdown-text">Testimonials and clients</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../training/scholarships.html"> 
+<span class="menu-text">Scholarships</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources/resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../support/support.html"> 
+<span class="menu-text">Support</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../community/community.html"> 
+<span class="menu-text">Community</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact/contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://twitter.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/appliedepi/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-dark hidden"><div class="quarto-announcement-content">
+<p><strong>Scholarships open January 20th 2025! Apply by February 10th.</strong> Learn more <a href="..\training/scholarships.html">here</a>.</p>
+</div></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="leadership" class="level2">
+<h2 class="anchored" data-anchor-id="leadership">Leadership</h2>
+<div id="listing-leadership_team" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-5">
+<div class="g-col-1" data-index="0">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/staff/neale.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Executive Director (Co-founder)
+</h5>
+<div class="card-subtitle listing-subtitle">
+Neale Batra
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/staff/alex_sq.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+President of Board of Directors (Co-founder)
+</h5>
+<div class="card-subtitle listing-subtitle">
+Alex Spina
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/staff/paula.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Head of Support
+</h5>
+<div class="card-subtitle listing-subtitle">
+Paula Blomquist
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/staff/alanah.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Head of Training
+</h5>
+<div class="card-subtitle listing-subtitle">
+Alanah Jansen
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img loading="lazy" src="../assets/images/staff/chris.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Head of Operations
+</h5>
+<div class="card-subtitle listing-subtitle">
+Christopher Jarvis
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="team" class="level2">
+<h2 class="anchored" data-anchor-id="team">Team</h2>
+<!-- Visible only on small screens -->
+<div class="d-block d-md-none">
+<div id="listing-wider_team_mobile" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-wider_team_mobile-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-wider_team_mobile'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-image" data-direction="asc">
+        </option>
+         <option value="listing-subtitle" data-direction="asc">
+          Name
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
+</th>
+<th>
+<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-title-sort="Executive Director (Co-founder)">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/neale.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Neale Batra</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-title-sort="President of Board of Directors (Co-founder)">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alex_sq.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Alex Spina</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-title-sort="Head of Support">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/paula.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Paula Blomquist</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-title-sort="Head of Training">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alanah.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Alanah Jansen</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-title-sort="Head of Operations">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/chris.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Christopher Jarvis</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-title-sort="Operations Assistant">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/castory.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Castory Munishi</span>
+</td>
+</tr>
+<tr data-index="6" data-listing-title-sort="Translations Coordinator">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luong1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Luong Nguyen</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-title-sort="Instructor / Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/berhe.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Berhe Etsay</span>
+</td>
+</tr>
+<tr data-index="8" data-listing-title-sort="Instructor / Support Desk Technician">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/olivia.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Olivia Boyd</span>
+</td>
+</tr>
+<tr data-index="9" data-listing-title-sort="Instructor / Field Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/leonel.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Leonel Lerebours Nadal</span>
+</td>
+</tr>
+<tr data-index="10" data-listing-title-sort="Instructor / Medical Statistician">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mumbua.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Mumbua Mutunga</span>
+</td>
+</tr>
+<tr data-index="11">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pat.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Pat Keating</span>
+</td>
+</tr>
+<tr data-index="12" data-listing-title-sort="Biostatistician / R Programmer">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/christopher.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Christopher Maronga</span>
+</td>
+</tr>
+<tr data-index="13" data-listing-title-sort="R Instructor">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mara.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Mara Kont</span>
+</td>
+</tr>
+<tr data-index="14">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/aminata.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Aminata Ndiaye</span>
+</td>
+</tr>
+<tr data-index="15">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/lucca.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Lucca Nielsen</span>
+</td>
+</tr>
+<tr data-index="16">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luisq.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Luis Quezada</span>
+</td>
+</tr>
+<tr data-index="17">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pragati.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Pragati Prasad</span>
+</td>
+</tr>
+<tr data-index="18">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/rafa.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Rafael Ruiz Montero</span>
+</td>
+</tr>
+<tr data-index="19">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/amy_m.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Amy Mikhail</span>
+</td>
+</tr>
+<tr data-index="20">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/jason.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Vivek Jason Jayaraj</span>
+</td>
+</tr>
+<tr data-index="21">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/alberto.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Alberto Mateo Urdiales</span>
+</td>
+</tr>
+<tr data-index="22">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/abel.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Abel Khisa</span>
+</td>
+</tr>
+<tr data-index="23">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/shazia.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Shazia Ruybal-Pesántez</span>
+</td>
+</tr>
+<tr data-index="24">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/temuulen.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Temuulen Enebish</span>
+</td>
+</tr>
+<tr data-index="25">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/njoki.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Njoki Njuki</span>
+</td>
+</tr>
+<tr data-index="26" data-listing-title-sort="State-level Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/arran.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Arran Hamlet</span>
+</td>
+</tr>
+<tr data-index="27">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kennedy.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Kennedy Mwai</span>
+</td>
+</tr>
+<tr data-index="28" data-listing-title-sort="Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kelly.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Kelly McCain</span>
+</td>
+</tr>
+<tr data-index="29" data-listing-title-sort="R Programmer / Instructor">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Mathilde Mousset</span>
+</td>
+</tr>
+<tr data-index="30">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/bryan.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Bryan Tegomoh</span>
+</td>
+</tr>
+<tr data-index="31">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/des.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Desmond Gul</span>
+</td>
+</tr>
+<tr data-index="32">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/steven.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Steven Sola</span>
+</td>
+</tr>
+<tr data-index="33">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Martin Lotto</span>
+</td>
+</tr>
+<tr data-index="34">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/finlay.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Finlay Campbell</span>
+</td>
+</tr>
+<tr data-index="35">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tamara.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Tamara Ricardo</span>
+</td>
+</tr>
+<tr data-index="36">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/moses.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Moses Musau</span>
+</td>
+</tr>
+<tr data-index="37">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/daniel.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Daniel Suh</span>
+</td>
+</tr>
+<tr data-index="38">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/meenakshi.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Meenakshi Kushwaha</span>
+</td>
+</tr>
+<tr data-index="39">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/laurent.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Laurent Lehot</span>
+</td>
+</tr>
+<tr data-index="40">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/callum.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Callum Thirkell</span>
+</td>
+</tr>
+<tr data-index="41">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/janice.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Janice Okeke</span>
+</td>
+</tr>
+<tr data-index="42">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/deepak.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Deepak Varughese</span>
+</td>
+</tr>
+<tr data-index="43">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/michael.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Michael Samuel</span>
+</td>
+</tr>
+<tr data-index="44">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/Isha1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Isha Berry</span>
+</td>
+</tr>
+<tr data-index="45">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/henry.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Henry Laurenson-Schafer</span>
+</td>
+</tr>
+<tr data-index="46">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/luis.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Luis Hernando Aguilar Ramirez</span>
+</td>
+</tr>
+<tr data-index="47">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/mcewen.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">McEwen Khundi</span>
+</td>
+</tr>
+<tr data-index="48">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/frank.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Frank Kagoro</span>
+</td>
+</tr>
+<tr data-index="49">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/juan1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Juan Carlos F Merino</span>
+</td>
+</tr>
+<tr data-index="50">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tim.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Tim Lee</span>
+</td>
+</tr>
+<tr data-index="51">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/hitomi1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Hitomi Kariya</span>
+</td>
+</tr>
+<tr data-index="52">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/isaac.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Isaac Florence</span>
+</td>
+</tr>
+<tr data-index="53">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/omer.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Abdullah Ömer Şeker</span>
+</td>
+</tr>
+<tr data-index="54">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/calder.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-subtitle">Calder Fong</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="wider_team_mobile-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+</div>
+<!-- Visible only on medium and larger screens -->
+<div class="d-none d-md-block">
+<div id="listing-wider_team" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-wider_team-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-wider_team'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-image" data-direction="asc">
+        </option>
+         <option value="listing-subtitle" data-direction="asc">
+          Name
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Role
+        </option>
+         <option value="listing-description" data-direction="asc">
+          About
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Role</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">About</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-title-sort="Executive Director (Co-founder)">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/neale.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Executive Director (Co-founder)</span>
+</td>
+<td>
+<span class="listing-subtitle">Neale Batra</span>
+</td>
+<td>
+<span class="listing-description">Neale is an epidemiologist who works to improve operational emergency response. He loves teaching, building community, and values public service. Prior to co-founding Applied Epi, he worked in emergencies and preparedness for WHO, Médecins Sans Frontières, and several US local public health agencies.</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-title-sort="President of Board of Directors (Co-founder)">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alex_sq.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">President of Board of Directors (Co-founder)</span>
+</td>
+<td>
+<span class="listing-subtitle">Alex Spina</span>
+</td>
+<td>
+<span class="listing-description">Alex co-founded Applied Epi to widen access to robust epidemiological analysis methods and tools. He is an epidemiologist who has consulted for a variety of national and international health emergency response organisations, and is a medical doctor.</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-title-sort="Head of Support">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/paula.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Head of Support</span>
+</td>
+<td>
+<span class="listing-subtitle">Paula Blomquist</span>
+</td>
+<td>
+<span class="listing-description">Paula leads the Epidemiology Support pillar, overseeing Applied Epi’s 24/7 Support Desk and extended technical support projects for public health agencies. Previously, Paula was a principal epidemiologist in the UK Health Security Agency, has supported WHO with emergency response, and deployed to epidemic responses with the UK Emergency Medical Team.</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-title-sort="Head of Training">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alanah.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Head of Training</span>
+</td>
+<td>
+<span class="listing-subtitle">Alanah Jansen</span>
+</td>
+<td>
+<span class="listing-description">Alanah Jansen is the Epidemiology Curriculum Lead for Applied Epi. She played a key role in course development and delivery for the Canadian Field Epidemiology Training Program, and brings a wealth of experience in emergency response and surveillance honed through her work with Médecins Sans Frontières and in northern Canada. She is excited to make high-quality training opportunities more accessible to a wider audience.</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-title-sort="Head of Operations">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/chris.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Head of Operations</span>
+</td>
+<td>
+<span class="listing-subtitle">Christopher Jarvis</span>
+</td>
+<td>
+<span class="listing-description">Chris has a broad background encompassing government service, academia, the private sector, and international humanitarian work. He has worked as an epidemiologist in the UK Government, served as a faculty member at the London School of Hygiene and Tropical Medicine, led multiple Humanitarian deployments, and provided consulting services across various sectors. At Applied Epi, Chris leads operational efforts, ensuring the execution and growth of programs that support epidemiological practice and training on a global scale.</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-title-sort="Operations Assistant">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/castory.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Operations Assistant</span>
+</td>
+<td>
+<span class="listing-subtitle">Castory Munishi</span>
+</td>
+<td>
+<span class="listing-description">Castory Munishi loves to teach R, which he uses almost every day to generate insights to address healthcare challenges. He has served as data lead in several multi-disciplinary public health teams.</span>
+</td>
+</tr>
+<tr data-index="6" data-listing-title-sort="Translations Coordinator">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luong1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Translations Coordinator</span>
+</td>
+<td>
+<span class="listing-subtitle">Luong Nguyen</span>
+</td>
+<td>
+<span class="listing-description">Luong Nguyen is an R instructor and technician from Vietnam, and oversees language translation of Applied Epi resources. In his doctoral studies at Uppsala University, Sweden, he focuses on infectious and zoonotic diseases, risk analysis, and spatial epidemiology within integrative approaches such as One Health and Ecohealth.</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-title-sort="Instructor / Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/berhe.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Epidemiologist</span>
+</td>
+<td>
+<span class="listing-subtitle">Berhe Etsay</span>
+</td>
+<td>
+<span class="listing-description">Berhe is an epidemiologist with 10 years experience as a clinician, lecturer, and public health expert – including four years in emergency response with Médecins Sans Frontières in Ethiopia and South Sudan. He estimates that R has saved 90% of the time he used to spend on data analysis, and is proud to help others experience the same.</span>
+</td>
+</tr>
+<tr data-index="8" data-listing-title-sort="Instructor / Support Desk Technician">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/olivia.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Support Desk Technician</span>
+</td>
+<td>
+<span class="listing-subtitle">Olivia Boyd</span>
+</td>
+<td>
+<span class="listing-description">Olivia is a bilingual R instructor and Support Desk technician. She completed her PhD at Imperial College London in infectious disease modelling, in which she developed novel phylodynamic methods to monitor disease transmission in the context of emerging and pandemic outbreaks.</span>
+</td>
+</tr>
+<tr data-index="9" data-listing-title-sort="Instructor / Field Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/leonel.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Field Epidemiologist</span>
+</td>
+<td>
+<span class="listing-subtitle">Leonel Lerebours Nadal</span>
+</td>
+<td>
+<span class="listing-description">Leonel, MD, is a field epidemiologist (FETP) in the Dominican Republic who has worked in the NGO and public sector on HIV/TB since 2007. He has been an instructor for the DR FETP program in EpiInfo and QGIS, and in 2020 fell in love with data science because of R.</span>
+</td>
+</tr>
+<tr data-index="10" data-listing-title-sort="Instructor / Medical Statistician">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mumbua.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Medical Statistician</span>
+</td>
+<td>
+<span class="listing-subtitle">Mumbua Mutunga</span>
+</td>
+<td>
+<span class="listing-description">Mumbua Mutunga is an R instructor and medical statistician who has worked with KEMRI and CEMA in Kenya, with particular expertise in rabies surveillance and elimination programs. She is passionate about supporting people to leverage R and other statistical tools to do meaningful work in disease prevention and control.</span>
+</td>
+</tr>
+<tr data-index="11">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pat.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Pat Keating</span>
+</td>
+<td>
+<span class="listing-description">Patrick is an epidemiologist and has worked as an Epidemiology Advisor for MSF Operational Centre Amsterdam since 2019. He has supported outbreak response and surveillance activities in the DRC, Ethiopia, South Sudan and Sudan. He started learning R in 2015 and is happy to support further uptake of R by epidemiologists worldwide.</span>
+</td>
+</tr>
+<tr data-index="12" data-listing-title-sort="Biostatistician / R Programmer">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/christopher.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Biostatistician / R Programmer</span>
+</td>
+<td>
+<span class="listing-subtitle">Christopher Maronga</span>
+</td>
+<td>
+<span class="listing-description">Christopher is a biostatistician and R programmer currently at the Centre for Statistics in Medicine, Oxford University. He has broad experience managing and analysing healthcare data for decision-making, as well as teaching introductory and advanced training courses.</span>
+</td>
+</tr>
+<tr data-index="13" data-listing-title-sort="R Instructor">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mara.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">R Instructor</span>
+</td>
+<td>
+<span class="listing-subtitle">Mara Kont</span>
+</td>
+<td>
+<span class="listing-description">Mara is an R instructor for French and English courses and supports the R Help Desk. She is a PhD student in infectious disease epidemiology at Imperial College London.</span>
+</td>
+</tr>
+<tr data-index="14">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/aminata.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Aminata Ndiaye</span>
+</td>
+<td>
+<span class="listing-description">Aminata is an Epidemiologist-Biostatistician with extensive experience in field outbreak response. She is from Sénégal, leads Applied Epi R courses, and hopes all French-speaking R users benefit from The Epi R Handbook. Saying ‘an R User will always be an R Learner’ she invites you into an eternal learning process. Dal leen ak jàmm! Welcome on board!</span>
+</td>
+</tr>
+<tr data-index="15">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/lucca.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Lucca Nielsen</span>
+</td>
+<td>
+<span class="listing-description">Lucca is a public health data analyst who has worked several years in state-level epidemiological surveillance in São Paulo, Brazil. His primary focus is respiratory infectious diseases and automated technical reports. He aims to provide valuable data-driven insights and support disease control and decision-making processes in public health.</span>
+</td>
+</tr>
+<tr data-index="16">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luisq.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Luis Quezada</span>
+</td>
+<td>
+<span class="listing-description">Luis Fernando Quezada is a bioinformatics engineer from Universidad del Valle de Guatemala with training in biostatistics from the Johns Hopkins University. He works for the Health Emergencies Department at PAHO/WHO regional office using R daily for data management, automated reports and surveillance dashboards. He also spent multiple years at PAHO’s Guatemala country office working for the Comprehensive Immunizations Department. He is very passionate about teaching R for public health, epidemiology, statistics, and GIS globally.</span>
+</td>
+</tr>
+<tr data-index="17">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pragati.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Pragati Prasad</span>
+</td>
+<td>
+<span class="listing-description">Pragati is an infectious disease epidemiologist with extensive R experience in mathematical and statistical modelling, data management, and report development. Previously, she worked at the US Centers for Disease Control and Prevention for three years building models and reports for pandemic preparedness and response. Pragati is currently an Epidemiology PhD student at Emory University in Atlanta, GA.</span>
+</td>
+</tr>
+<tr data-index="18">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/rafa.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Rafael Ruiz Montero</span>
+</td>
+<td>
+<span class="listing-description">Rafael Ruiz is a medical specialist in Preventive Medicine and Public Health in Spain. Originally from Andalusia, he is currently employed at both the Hospital and University of Córdoba. His professional journey with R commenced during a listeriosis outbreak in his region, and subsequently, he applied that knowledge to the COVID-19 pandemic. He is passionate about automating daily tasks to enhance disease detection.</span>
+</td>
+</tr>
+<tr data-index="19">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/amy_m.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Amy Mikhail</span>
+</td>
+<td>
+<span class="listing-description">Amy is a field epidemiologist and public health microbiologist (EPIET/EUPHEM alum), with over 15 years of experience in infectious disease programs at regional, national and international levels. Since 2015, she has enjoyed engaging with and supporting new R users, through teaching, mentoring and the development of R learning materials. Currently based in the UK, Amy now works internationally as a freelance consultant.</span>
+</td>
+</tr>
+<tr data-index="20">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/jason.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Vivek Jason Jayaraj</span>
+</td>
+<td>
+<span class="listing-description">Jason is an epidemiologist at the Ministry of Health Malaysia with a keen interest in infectious diseases, informatics, and public health. His passion lies in the spatiotemporal modelling of diseases and developing data-driven solutions. An avid R trainer, Jason staunchly believes in leveraging R at grassroots levels to revolutionise health outcomes.</span>
+</td>
+</tr>
+<tr data-index="21">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/alberto.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Alberto Mateo Urdiales</span>
+</td>
+<td>
+<span class="listing-description">Alberto is a medical doctor specialised in public health and field epidemiology, currently at the National Institute of Public Health in Italy, also teaching field epidemiology and medical statistics. Having learned R seven years ago, he appreciates how it allows more effective and efficient work to tackle emergencies, and believes that helping others to become proficient will be an asset to all global public health.</span>
+</td>
+</tr>
+<tr data-index="22">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/abel.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Abel Khisa</span>
+</td>
+<td>
+<span class="listing-description">Abel Khisa is a humanitarian and health data scientist whose work experience spans Somalia, Kenya, CAR, Mali, and Nigeria for a range of humanitarian issues including non-communicable diseases, malnutrition, and antimicrobial resistance (AMR). Abel is passionate about inclusive data technologies and approaches within medical humanitarian work and research. He uses R for web scraping and data analysis for near real-time public health reporting.</span>
+</td>
+</tr>
+<tr data-index="23">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/shazia.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Shazia Ruybal-Pesántez</span>
+</td>
+<td>
+<span class="listing-description">Shazia is an infectious disease genomic epidemiologist based at Imperial College London. Her R expertise spans data management, population genetics, mathematical modelling, automated reporting, and R Shiny app development. Her commitment to the R community extends beyond her research, and prior to joining Applied Epi as an instructor (English and Spanish) she was president and co-organizer of R-Ladies Melbourne Inc.&nbsp;She is passionate about open science, capacity building in R, and the development of advanced digital tools to enhance pathogen surveillance.</span>
+</td>
+</tr>
+<tr data-index="24">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/temuulen.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Temuulen Enebish</span>
+</td>
+<td>
+<span class="listing-description">Temuulen is an epidemiologist with expertise ranging from outbreak investigation and infectious disease surveillance to air pollution research and reproductive epidemiology. Based in Mongolia, he has consulted for WHO and the national health agency, including support for the Field Epi Training Program (FETP). He got hooked on R during his doctoral studies at USC, teaches R for Applied Epi, and leads the Mongolian translation team.</span>
+</td>
+</tr>
+<tr data-index="25">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/njoki.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Njoki Njuki</span>
+</td>
+<td>
+<span class="listing-description">Njoki Njuki is a biostatistician and data analyst within the Health Economics and Outcomes Research (HEOR) team at the University of Oxford. Her expertise involves managing and applying advanced statistical techniques to patient data to generate real-world insights. She regularly uses R to create reproducible workflows, ensuring transparency and consistency in her analyses.</span>
+</td>
+</tr>
+<tr data-index="26" data-listing-title-sort="State-level Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/arran.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">State-level Epidemiologist</span>
+</td>
+<td>
+<span class="listing-subtitle">Arran Hamlet</span>
+</td>
+<td>
+<span class="listing-description">Arran is a state-level epidemiologist with the US CDC’s Epidemic Intelligence Service (EIS). He has expertise in mathematical modelling having worked for Imperial College London, and has supported outbreak response for WHO and several national ministries of health. Enthusiastic about teaching, he has designed and delivered R workshops for diverse audiences.</span>
+</td>
+</tr>
+<tr data-index="27">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kennedy.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Kennedy Mwai</span>
+</td>
+<td>
+<span class="listing-description">Kennedy Mwai has expertise in analysis of spatial, epidemiological, and high-throughput health data, having worked on projects throughout Kenya. His research focuses on malaria, he has supported health emergency response in Syria, and he enjoys teaching R and reproducible analysis techniques to diverse audiences.</span>
+</td>
+</tr>
+<tr data-index="28" data-listing-title-sort="Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kelly.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">Epidemiologist</span>
+</td>
+<td>
+<span class="listing-subtitle">Kelly McCain</span>
+</td>
+<td>
+<span class="listing-description">Kelly is an epidemiologist with broad experience using R for spatial epidemiology, field trial data management, and mathematical modelling. She is a current PhD student at Imperial College London modelling the public health impact of malaria vaccines and an R instructor for both French and English courses.</span>
+</td>
+</tr>
+<tr data-index="29" data-listing-title-sort="R Programmer / Instructor">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">R Programmer / Instructor</span>
+</td>
+<td>
+<span class="listing-subtitle">Mathilde Mousset</span>
+</td>
+<td>
+<span class="listing-description">Mathilde is an R programmer and instructor with expertise supporting the data management needs of health emergency response in many contexts.</span>
+</td>
+</tr>
+<tr data-index="30">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/bryan.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Bryan Tegomoh</span>
+</td>
+<td>
+<span class="listing-description">Bryan is a Cameroonian-born physician and medical epidemiologist who supports several national and subnational health agencies, particularly with genomics-informed outbreak investigations. He is passionate about pathogen genomics in public health and how findings can be directly translated into policies that impact the lives of vulnerable populations.</span>
+</td>
+</tr>
+<tr data-index="31">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/des.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Desmond Gul</span>
+</td>
+<td>
+<span class="listing-description">Desmond is an epidemiologist and public health data analyst based in Melbourne, Australia. He uses R extensively and has expertise working with large administrative health and surveillance datasets, automated reporting, infectious disease surveillance and spatiotemporal modelling.</span>
+</td>
+</tr>
+<tr data-index="32">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/steven.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Steven Sola</span>
+</td>
+<td>
+<span class="listing-description">Steven is a PhD Candidate in Environmental Health at Johns Hopkins University. He previously worked as a CSTE Applied Epidemiology Fellow for the New York State Department of Health responding to foodborne outbreaks, measles and COVID-19. He received a master’s degree in Environmental Health and Epidemiology at Emory University and is a Returned Peace Corps Volunteer, having served as an English teacher in Indonesia from 2013-2016.</span>
+</td>
+</tr>
+<tr data-index="33">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Martin Lotto</span>
+</td>
+<td>
+<span class="listing-description">Martín is an instructor on Spanish and English courses. He works as a research engineer with the Global Health Resilience group at the Barcelona Supercomputing Center, while pursuing his PhD in Epidemiology at the Hannover Medical School. Additionally, he supports the epidemiology team at BCN Checkpoint. Martín has used his expertise in R to study the impact of environmental and climatic factors on the dynamics of infectious diseases, developing reports and tools to aid public health decision-making.</span>
+</td>
+</tr>
+<tr data-index="34">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/finlay.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Finlay Campbell</span>
+</td>
+<td>
+<span class="listing-description">Finlay Campbell is an R developer and outbreak analytics consultant at the WHO Health Emergencies Programme in Geneva. He is the lead author of the epicontacts R package, among others.</span>
+</td>
+</tr>
+<tr data-index="35">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tamara.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Tamara Ricardo</span>
+</td>
+<td>
+<span class="listing-description">Tamara is a researcher at the National Institute of Epidemiology (INE) in Argentina, where she teaches statistics in intermediate and advanced epidemiology courses. She is a biologist with a PhD in Veterinary Science, with a research focus in disease ecology of leptospirosis in riverside communities. Tamara’s current work primarily involves data processing, statistical analysis, and GIS analysis of observational epidemiology studies.</span>
+</td>
+</tr>
+<tr data-index="36">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/moses.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Moses Musau</span>
+</td>
+<td>
+<span class="listing-description">Moses is a Public Health research statistician and R programmer based at KEMRI-Wellcome Trust Research program in Nairobi, Kenya. He has extensive experience in public health data management and analysis using R, with an emphasis on infectious diseases, for public health surveillance to understand disease burden and epidemiology among the population.</span>
+</td>
+</tr>
+<tr data-index="37">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/daniel.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Daniel Suh</span>
+</td>
+<td>
+<span class="listing-description">Daniel is a postdoctoral researcher at Virginia Tech studying routes of transmission of SARS-CoV-2 into wildlife populations. He completed his doctoral studies at the University of Georgia and is passionate about the use of R for data science and mathematical modeling of infectious diseases.</span>
+</td>
+</tr>
+<tr data-index="38">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/meenakshi.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Meenakshi Kushwaha</span>
+</td>
+<td>
+<span class="listing-description">Meenakshi Kushwaha is an environmental health specialist and certified RStudio ‘tidyverse’ instructor. She is a long term consultant with the environmental, climate and urban health division at Vital Strategies where she provides technical support on childhood lead poisoning prevention, air quality and climate change programs in South Asia, Southeast Asia and Sub-Saharan Africa.</span>
+</td>
+</tr>
+<tr data-index="39">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/laurent.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Laurent Lehot</span>
+</td>
+<td>
+<span class="listing-description">Laurent is a public health engineer, epidemiologist and biostatistician. For 7 years he worked in multiple countries with various humanitarian NGOs, including responding to cholera and Ebola outbreaks. After his master of public health he specialized in spatio-temporal analysis and currently uses his R skills for support to outbreak response, epidemiology, and biostatistical analysis for medical research.</span>
+</td>
+</tr>
+<tr data-index="40">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/callum.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Callum Thirkell</span>
+</td>
+<td>
+<span class="listing-description">Callum is a former paramedic turned Field Epidemiologist through the Australian FETP. He is based in New Zealand and uses R primarily for national STI surveillance alongside REDCap and SQL. He is experienced in leveraging the use of R throughout the surveillance cycle from data collection to routine reporting. He also works with colleagues at the Department of Health, Papua New Guinea helping coordinate the iFETP. He values the practical use of R for the benefit of frontline field epidemiology and looks forward to expanding this into the Pacific.</span>
+</td>
+</tr>
+<tr data-index="41">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/janice.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Janice Okeke</span>
+</td>
+<td>
+<span class="listing-description">Janice is a public health advocate and champion of quality education for all children. She has worked as a CDC Applied Epidemiology Fellow, evaluation specialist, and data analyst at US local and state health departments, and also has experience teaching physical education to students from various backgrounds in US cities.</span>
+</td>
+</tr>
+<tr data-index="42">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/deepak.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Deepak Varughese</span>
+</td>
+<td>
+<span class="listing-description">Deepak is a primary care doctor and epidemiologist. He has experience working in resource-limited settings in rural and tribal India. He believes data and informatics are powerful tools to be used responsibly keeping in mind that the larger goal remains problem-solving. He thinks R is a great way to deal with the dirty datasets of the real world.</span>
+</td>
+</tr>
+<tr data-index="43">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/michael.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Michael Samuel</span>
+</td>
+<td>
+<span class="listing-description">Michael Samuel is a California public health epidemiologist/biostatistician who has used R extensively for infectious disease investigations and surveillance, burden of disease assessment, and modeling. He has a special interest in visual display of data and has conducted epi software trainings on five continents.</span>
+</td>
+</tr>
+<tr data-index="44">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/Isha1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Isha Berry</span>
+</td>
+<td>
+<span class="listing-description">Isha is an epidemiologist with the US CDC’s Epidemic Intelligence Service (EIS). Her doctoral research at the University of Toronto focused on global infectious disease transmission dynamics, particularly between humans and animals. Isha is passionate about open science and science communication.</span>
+</td>
+</tr>
+<tr data-index="45">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/henry.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Henry Laurenson-Schafer</span>
+</td>
+<td>
+<span class="listing-description">Henry is a data analyst and R Shiny expert in the COVID-19 analytics team of the WHO Health Emergencies Programme. He is an author of the Epi R Handbook and supports Applied Epi Trainings.</span>
+</td>
+</tr>
+<tr data-index="46">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/luis.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Luis Hernando Aguilar Ramirez</span>
+</td>
+<td>
+<span class="listing-description">Luis works on knowledge and digital information management in humanitarian response with the UN (WHO, UNOCHA, UNWOMEN, UNMEER) and other organizations in countries including Honduras, Mozambique, Colombia, the Philippines, Sierra Leone, Syria, and Bangladesh. He is involved in digital innovation initiatives for humanitarian response, crowdsourcing, and citizen participation in disaster risk management.</span>
+</td>
+</tr>
+<tr data-index="47">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/mcewen.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">McEwen Khundi</span>
+</td>
+<td>
+<span class="listing-description">McEwen is a spatial epidemiologist whose expertise in R spans TB &amp; HIV prevalence surveys, cohort studies, cluster randomised trials, and Bayesian approaches. He loves teaching R to new learners across medicine and the social sciences, is an RStudio certified tidyverse instructor, and is an RStudio tidyverse certified instructor. Based in Malawi, he is finishing a PhD in medical statistics at LSHTM.</span>
+</td>
+</tr>
+<tr data-index="48">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/frank.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Frank Kagoro</span>
+</td>
+<td>
+<span class="listing-description">Frank is a Tanzanian research physician and epidemiologist, and leads the Swahili translation team. He is based at the University of Cape Town, South Africa, researching tools for surveillance of antimalarial drug resistance in South-East Asia and Southern Africa. He is affiliated with the Worldwide Antimalarial Resistance Network (WWARN) and Mahidol Oxford Tropical Medicine Research Unit (MORU), Thailand.</span>
+</td>
+</tr>
+<tr data-index="49">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/juan1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Juan Carlos F Merino</span>
+</td>
+<td>
+<span class="listing-description">Juan MD, PhD is a specialist in Preventive Medicine and Public Health, and leads the Spanish translation team. He worked in epidemiological surveillance in the regional government of Andalusia, Spain and has taught EpiInfo, EpiMap and outbreak investigations in many courses in Andalusia, the Spanish National Public Health School, the Spanish EIS, etc.</span>
+</td>
+</tr>
+<tr data-index="50">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tim.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Tim Lee</span>
+</td>
+<td>
+<span class="listing-description">Tim is a postdoctoral research fellow in Pediatric Infectious Diseases at the Johns Hopkins Hospital. He has been involved with Applied Epi since its inception, supports R training in several languages, and is excited to continue helping increase access to R around the world.</span>
+</td>
+</tr>
+<tr data-index="51">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/hitomi1.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Hitomi Kariya</span>
+</td>
+<td>
+<span class="listing-description">Hitomi is an epidemiologist focusing on social determinants of health and community-based interventions. She holds a BA in Social Sciences from Waseda University and MPH in Health Services from the University of Washington. In her spare time, Hitomi leads the Japanese translation team and enjoys jogging, hiking, and traveling.</span>
+</td>
+</tr>
+<tr data-index="52">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/isaac.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Isaac Florence</span>
+</td>
+<td>
+<span class="listing-description">Isaac is Principal Epidemiology Data Scientist at the UK Health Security Agency, working across epidemiology analytics, data engineering and software engineering. This work focuses on automation, big data, and use of High-Performance Computing infrastructure (mostly in R).</span>
+</td>
+</tr>
+<tr data-index="53">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/omer.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Abdullah Ömer Şeker</span>
+</td>
+<td>
+<span class="listing-description">Omer, MD, MPH is the lead of the Turkish translation. He is an epidemiologist, with experience in medico-marketing, bioinformatics and clinical trials. Currently working as Real-World Evidence manager for IQVIA. He is focused on personalized medicine and big data analytics.</span>
+</td>
+</tr>
+<tr data-index="54">
+<td>
+<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/calder.png" style="height: 125px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
+</td>
+<td>
+<span class="listing-subtitle">Calder Fong</span>
+</td>
+<td>
+<span class="listing-description">Calder is the team’s resident artist.</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="wider_team-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+Applied Epi is a non-profit organization with 501(c)(3) status registered in Maryland, USA. This work is licensed by Applied Epi Incorporated under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a> for occasional emails. <br>
+<div title="Free SVG Background by BGJar (https://bgjar.com). Icons from FreePik: Worldmap by TuranKen, USA by Three musketeers, Mail by fadlyrusady">
+Hover over this text for design attributions
+</div>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
