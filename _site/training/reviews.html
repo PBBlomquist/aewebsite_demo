@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/Applied_Epi_logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -71,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Relevance .list');
+    const listingTargetEl = window.document.querySelector('#listing-Single .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -84,35 +85,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Relevance'] = new List('listing-Relevance', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Impact .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-description','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-id","listing-description","listing-lang","listing-author","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Impact'] = new List('listing-Impact', options);
+    window['quarto-listings']['listing-Single'] = new List('listing-Single', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -195,10 +168,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/simple_seethrough.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Applied Epi</span>
+    <img src="../assets/images/Applied_Epi_logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -283,13 +253,14 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/company/appliedepi/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-dark hidden"><div class="quarto-announcement-content">
+  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-danger hidden"><div class="quarto-announcement-content">
 <p><strong>Scholarships open January 20th 2025! Apply by February 10th.</strong> Learn more <a href="..\training/scholarships.html">here</a>.</p>
 </div></div>
 </header>
@@ -304,17 +275,30 @@ window.Quarto = {
 
 
 
+<style>
+  #reviewbox {
+    background-color: #e4e9eb; 
+    color: gray80;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; /* Stack image above text */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    height: auto; /* Set the desired height here */ 
+  }
+</style>
 <section id="what-do-our-students-think-of-the-intro-to-r-course" class="level2">
 <h2 class="anchored" data-anchor-id="what-do-our-students-think-of-the-intro-to-r-course">What do our students think of the Intro to R course?</h2>
-<p>Students overwhelmingly approve: 4.7 out of 5 stars from 490 surveyed participants.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="..\assets/images/starrating.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450"></p>
-</figure>
-</div>
-<p>Overall, students said the following about our <strong>course delivery</strong>:</p>
-<div id="listing-General" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-4">
+<div class="grid" style="display: grid;">
+<div class="g-col-12 g-col-md-4">
+<div id="reviewbox">
+<p>Students overwhelmingly approve: <strong>4.7 out of 5 stars</strong> from 490 surveyed participants.</p>
+<p><img src="..\assets/images/starrating-transparent.png" class="img-fluid quarto-figure quarto-figure-center" width="350"> <br></p>
+<p>And we receive this type of feedback frequently:</p>
+<div id="listing-Single" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-1">
 <div class="g-col-1" data-index="0" data-categories="General">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
@@ -331,151 +315,19 @@ US CDC Epidemic Intelligence Service (EIS) Officer
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="General">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-Program is really well structured. I really enjoyed the code-along sessions immediately after or during the lecture. Exercises are well thought out.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Epidemiologist, Philippines
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="General">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-Inspirational instructors. I cannot recommend highly enough.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Epidemiology team lead
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="General">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-Superbly structured by experienced epidemiologists
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Senior epidemiologist, UK Health Agency
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
-<p>Students also said this about the <strong>relevance</strong> of the course to epidemiologists:</p>
-<div id="listing-Relevance" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-categories="Relevance">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-Applied Epi’s Introduction to R Course is THE best course for applied epidemiologists and other public health practitioners. The instructors work in public health and know exactly what the participants need to learn and provide concrete examples that can be immediately applied to existing workflows.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-FETP coordinator, Philippines
 </div>
 </div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Relevance">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-I took the Coursera course - this is SO MUCH BETTER. It is so much more tailored to my direct needs. I don’t think like a programmer, I think like an epidemiologst, so this is much more intuitive
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-US local epidemiologist
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Relevance">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-This course addressed the problems on my mind, those day-to-day challenges. Other R courses are far too fast or abstract - this is the first I’ve taken where I actually want to continue!… in 1 hour, we resolved R problems I’ve had for 1 year!
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Mentor, Liberia Field Epi Training Program
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Relevance">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-A few years back we did a training from a software company - this is an order of magnitude more useful because you’re teaching what we actually do.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Consultant Epidemiologist, Public Heatlh Wales
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<p>And importantly, here are some student comments on the <strong>impact</strong> of the course:</p>
-<div id="listing-Impact" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-4">
+<div class="g-col-12 g-col-md-8">
+<div id="reviewbox">
+<p>Here are other quotes from our students about our course <strong>delivery, relevance, and impact</strong>:</p>
+<div id="listing-General" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-2">
 <div class="g-col-1" data-index="0" data-categories="Impact">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-This course put me lightyears ahead in only 5 days!
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Epidemiologist, Save the Children
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Impact">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -491,23 +343,23 @@ Epidemiologist, Belize
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Impact">
+<div class="g-col-1" data-index="1" data-categories="Impact">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <div class="card-text listing-description">
-In a world that is so inequitable, R is a great equaliser. I feel very empowered by this training.
+The course literally changed my life!
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
-Epidemiologist, Country of Georgia
+Epidemiologist, Public Health Wales
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Impact">
+<div class="g-col-1" data-index="2" data-categories="Impact">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -523,32 +375,16 @@ UK FETP Fellow
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Impact">
+<div class="g-col-1" data-index="3" data-categories="Relevance">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <div class="card-text listing-description">
-The course literally changed my life
+Applied Epi’s Introduction to R Course is THE best course for applied epidemiologists and other public health practitioners. The instructors work in public health and know exactly what the participants need to learn.
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
-Epidemiologist, Public Health Wales
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="Impact">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<div class="card-text listing-description">
-This course showed me that it was not only possible to use R for a beginner like me but that it was a powerful tool for frontline workers to produce reporting, analyze real world data and advance public health.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-UK FETP Fellow
+FETP coordinator, Philippines
 </div>
 </div>
 </div>
@@ -558,6 +394,9 @@ UK FETP Fellow
 </div>
 <div class="listing-no-matching d-none">
 No matching items
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -1023,7 +862,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-Applied Epi is a non-profit organization with 501(c)(3) status registered in Maryland, USA. This work is licensed by Applied Epi Incorporated under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a> for occasional emails. <br>
+Applied Epi is a global non-profit organization registered in Maryland, USA, with 501(c)(3) status. <br> Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC-BY-NC-SA 4.0</a>. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a>. <br>
 <div title="Free SVG Background by BGJar (https://bgjar.com). Icons from FreePik: Worldmap by TuranKen, USA by Three musketeers, Mail by fadlyrusady">
 Hover over this text for design attributions
 </div>

@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/Applied_Epi_logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -78,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -139,10 +140,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/simple_seethrough.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Applied Epi</span>
+    <img src="../assets/images/Applied_Epi_logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -227,13 +225,14 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/company/appliedepi/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-dark hidden"><div class="quarto-announcement-content">
+  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-danger hidden"><div class="quarto-announcement-content">
 <p><strong>Scholarships open January 20th 2025! Apply by February 10th.</strong> Learn more <a href="..\training/scholarships.html">here</a>.</p>
 </div></div>
 </header>
@@ -253,67 +252,83 @@ window.Quarto = {
     /* background-image: url('../assets/images/curvelinebg.svg'); */
   }
 </style>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<p>Applied Epi has developed several resources for self-learning R and epi methods.</p>
-<p>[Will add some stats here on EpiRhandbook?]</p>
+<section id="applieds-epis-training-resources" class="level2">
+<h2 class="anchored" data-anchor-id="applieds-epis-training-resources">Applied’s Epi’s training resources</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Applied Epi has developed several <strong>free resources for self-learning R and epi methods</strong>, all of which have been based on real-life public health data challenges and solutions. These resources are available in multiple languages. If you are interested in other languages or in supporting the creation of other resources, please let us know at contact@applied.org.</p>
+<p>More resources will be released in 2025 - watch this space!</p>
+</section>
+<section id="resources" class="level3">
+<h3 class="anchored" data-anchor-id="resources">Resources</h3>
 <div id="listing-resource_info" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-2">
 <div class="g-col-1" data-index="0" data-categories="Books,R,English,Spanish,French">
 <a href="https://www.epirhandbook.com/en/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/resources/epirhandbook.png" class="thumbnail-image card-img" style="height: 230px;">
+<img loading="lazy" src="../assets/images/resources/epirhandbook.png" class="thumbnail-image card-img" style="height: 210px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Epi R Handbook
 </h5>
-<div class="card-subtitle listing-subtitle">
-Handbook for using R for Epidemiology
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Books'); return false;">
+Books
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('English'); return false;">
+English
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Spanish'); return false;">
+Spanish
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('French'); return false;">
+French
+</div>
 </div>
 <div class="card-text listing-description">
-Description of Handbook for using R for Epidemiology
+The handbook is the go-to R book for epidemiologists and anyone with public health data tasks, with almost 1 million unique users and more than 3 million views since its launch in 2021. The handbook serves as a quick R code reference manual (online and offline) with task-centered examples that address common epidemiological problems.
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Exercises,R,English,Spanish,French,Portuguese" data-listing-file-modified-sort="1736511784163" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
+<div class="g-col-1" data-index="1" data-categories="Exercises,R,English,Spanish,French,Portuguese" data-listing-file-modified-sort="1736806352460" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
 <a href="../resources/tutorials.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/resources/tutorial-demo.gif" class="thumbnail-image card-img" style="height: 230px;">
+<img loading="lazy" src="../assets/images/resources/tutorial-demo.gif" class="thumbnail-image card-img" style="height: 210px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 R tutorials
 </h5>
-<div class="card-subtitle listing-subtitle">
-Free R tutorials
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Exercises'); return false;">
+Exercises
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('English'); return false;">
+English
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Spanish'); return false;">
+Spanish
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('French'); return false;">
+French
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Portuguese'); return false;">
+Portuguese
+</div>
 </div>
 <div class="card-text listing-description">
-Description of R tutorials
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Exercises,R,English,Spanish,French">
-<a href="https://casestudies.appliedepi.org/" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img loading="lazy" src="../assets/images/resources/casestudy.png" class="thumbnail-image card-img" style="height: 230px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Case Study Repository
-</h5>
-<div class="card-subtitle listing-subtitle">
-Case studies
-</div>
-<div class="card-text listing-description">
-Description of Case studies
+Our free self-paced tutorials are training materials for beginner audiences, to learn and practice R in the context of realistic data challenges experienced by frontline epidemiologists. Supportive funding for these tutorials was provided by Médecins Sans Frontières (MSF) / Doctors without Borders, TEPHINET, and the US CDC.
 </div>
 </div>
 </div>
@@ -327,6 +342,7 @@ No matching items
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -754,7 +770,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-Applied Epi is a non-profit organization with 501(c)(3) status registered in Maryland, USA. This work is licensed by Applied Epi Incorporated under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a> for occasional emails. <br>
+Applied Epi is a global non-profit organization registered in Maryland, USA, with 501(c)(3) status. <br> Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC-BY-NC-SA 4.0</a>. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a>. <br>
 <div title="Free SVG Background by BGJar (https://bgjar.com). Icons from FreePik: Worldmap by TuranKen, USA by Three musketeers, Mail by fadlyrusady">
 Hover over this text for design attributions
 </div>

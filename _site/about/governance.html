@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/Applied_Epi_logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -78,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -139,10 +140,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/simple_seethrough.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Applied Epi</span>
+    <img src="../assets/images/Applied_Epi_logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -227,13 +225,14 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/company/appliedepi/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-dark hidden"><div class="quarto-announcement-content">
+  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-danger hidden"><div class="quarto-announcement-content">
 <p><strong>Scholarships open January 20th 2025! Apply by February 10th.</strong> Learn more <a href="..\training/scholarships.html">here</a>.</p>
 </div></div>
 </header>
@@ -255,13 +254,22 @@ window.Quarto = {
 }
 </style>
 <div class="grid">
-<section id="governance" class="level2 g-col-12 g-col-md-5">
+<div class="g-col-12 g-col-md-5">
+<section id="governance" class="level2">
 <h2 class="anchored" data-anchor-id="governance">Governance</h2>
 <p>Applied Epi Incorporated is a registered nonprofit corporation in Maryland USA. It is recognised by the US government as a public charity, with 501(c)(3) status (EIN: 87-2222471). This means that all funds received must be used for our operations and programs.</p>
 <p>The Applied Epi board provides strategic direction and ensures the organization operates effectively and responsibly to achieve its mission.</p>
-<p>See our Terms of Service here: <a href="https://community.appliedepi.org/tos">Terms of Service</a></p>
-<p>See our Privacy policy here: <a href="https://www.appliedepi.org/files/privacy_policy.pdf">Privacy policy</a> NEED A DIFF LINK?</p>
 </section>
+<section id="policies" class="level2">
+<h2 class="anchored" data-anchor-id="policies">Policies</h2>
+<p>See our Terms of Service <a href="https://community.appliedepi.org/tos">here</a></p>
+<p>See our Privacy policy <a href="https://www.appliedepi.org/files/privacy_policy.pdf">here</a></p>
+</section>
+<section id="finances" class="level2">
+<h2 class="anchored" data-anchor-id="finances">Finances</h2>
+<p>You can view our US Form 990 forms <a href="https://projects.propublica.org/nonprofits/organizations/872222471">here</a></p>
+</section>
+</div>
 <!-- Put some space in -->
 <div class="g-col-0 g-col-md-1">
 
@@ -274,7 +282,7 @@ window.Quarto = {
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/neale.png" class="thumbnail-image card-img" style="height: 175px;">
+<img loading="lazy" src="../assets/images/staff/neale_sq.jpg" class="thumbnail-image card-img" style="height: 175px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -282,6 +290,11 @@ Executive Director (Co-founder)
 </h5>
 <div class="card-subtitle listing-subtitle">
 Neale Batra
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Non-voting board member
+</div>
 </div>
 </div>
 </div>
@@ -291,7 +304,7 @@ Neale Batra
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/alex_sq.png" class="thumbnail-image card-img" style="height: 175px;">
+<img loading="lazy" src="../assets/images/staff/alex_sq2.jpg" class="thumbnail-image card-img" style="height: 175px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -308,7 +321,7 @@ Alex Spina
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/elburg.png" class="thumbnail-image card-img" style="height: 175px;">
+<img loading="lazy" src="../assets/images/staff/elburg_sq.png" class="thumbnail-image card-img" style="height: 175px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -325,23 +338,7 @@ Elburg van Boetzelaer
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/sara.png" class="thumbnail-image card-img" style="height: 175px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-</h5>
-<div class="card-subtitle listing-subtitle">
-Sara Ferraz
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4">
-<a href="" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/annick.png" class="thumbnail-image card-img" style="height: 175px;">
+<img loading="lazy" src="../assets/images/staff/annick_sq.png" class="thumbnail-image card-img" style="height: 175px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -353,11 +350,11 @@ Annick Lenglet
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5">
+<div class="g-col-1" data-index="4">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/marieamelie.png" class="thumbnail-image card-img" style="height: 175px;">
+<img loading="lazy" src="../assets/images/staff/marieamelie_sq.jpg" class="thumbnail-image card-img" style="height: 175px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -805,7 +802,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-Applied Epi is a non-profit organization with 501(c)(3) status registered in Maryland, USA. This work is licensed by Applied Epi Incorporated under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a> for occasional emails. <br>
+Applied Epi is a global non-profit organization registered in Maryland, USA, with 501(c)(3) status. <br> Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC-BY-NC-SA 4.0</a>. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a>. <br>
 <div title="Free SVG Background by BGJar (https://bgjar.com). Icons from FreePik: Worldmap by TuranKen, USA by Three musketeers, Mail by fadlyrusady">
 Hover over this text for design attributions
 </div>

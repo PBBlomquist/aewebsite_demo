@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/Applied_Epi_logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -79,10 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/simple_seethrough.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Applied Epi</span>
+    <img src="../assets/images/Applied_Epi_logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -167,13 +165,14 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/company/appliedepi/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-dark hidden"><div class="quarto-announcement-content">
+  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-danger hidden"><div class="quarto-announcement-content">
 <p><strong>Scholarships open January 20th 2025! Apply by February 10th.</strong> Learn more <a href="..\training/scholarships.html">here</a>.</p>
 </div></div>
 </header>
@@ -189,37 +188,52 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
-  #beginner-courses {
+  #courses {
     background-color: #ADD8E680; /* Adjust the color as desired */
     padding: 20px; 
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
-  #advanced-courses {
-    background-color: #ade6ca80; /* Adjust the color as desired */
-    padding: 20px; 
+  #reviewbox2 {
+    background-color: #e4e9eb80; 
+    color: gray80;
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; /* Stack image above text */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    text-align: center;
+    height: auto; /* Set the desired height here */ 
   }
+
 </style>
 <section id="our-teaching-approach" class="level2">
 <h2 class="anchored" data-anchor-id="our-teaching-approach">Our teaching approach</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-8">
 <p>Developed by experienced practitioners, our courses emphasize:</p>
 <ul>
-<li><strong>Engaging and effective delivery</strong>: We bring concepts to life with clear explanations, real-world applications, and hands-on exercises to build your confidence and skills in R.</li>
+<li><strong>Engaging and effective delivery</strong>: We teach with clear explanations, relevant examples, and hands-on exercises to build your confidence and skills in R.</li>
 <li><strong>Individualised attention</strong>: With small class sizes (15–25 participants), we ensure one instructor for every six students, one-to-one support during exercises, and even offer supplementary tutoring calls for extra help with R setup and learning.</li>
 <li><strong>Accessible learning</strong>: We prioritise remote online delivery for convenience and effectiveness, but if you prefer an in-person experience, just email us at contact@appliedepi.org!</li>
 </ul>
-<p>Our Intro to R course has already empowered over 400 public health organisations worldwide, earning an average rating of 4.7 out of 5 stars. Participants frequently tell us, “This is the best R training I’ve ever had!”</p>
-<p>Want to see what others are saying? Read feedback and testimonials <a href="../training/reviews.html">here</a>.</p>
+</div>
+<div class="g-col-12 g-col-md-4">
+<div id="reviewbox2">
+<p><img src="..\assets/images/starrating-transparent.png" class="img-fluid quarto-figure quarto-figure-center" width="200"> <br> Our Intro to R course has already empowered over <strong>400</strong> public health organisations worldwide, earning an average rating of <strong>4.7 out of 5 stars</strong>. Participants frequently tell us, <strong>“This is the best R training I’ve ever had!”</strong> See more feedback and testimonials <a href="../training/reviews.html">here</a>.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="our-courses" class="level2">
 <h2 class="anchored" data-anchor-id="our-courses">Our courses</h2>
+<p><strong>See all upcoming public courses <a href="..\training/upcoming.html">here</a></strong></p>
 <section id="introductory-r-courses" class="level3">
 <h3 class="anchored" data-anchor-id="introductory-r-courses">Introductory R courses</h3>
-<p>See all upcoming public courses <a href="..\training/upcoming.html">here</a>)</p>
-<div id="beginner-courses">
+<div id="courses">
 <p><strong>Introduction to R for Applied Epidemiology</strong></p>
 <ul>
 <li><strong>Duration</strong>: 40 hours (10 modules of 3.5 hours each)</li>
@@ -234,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="advanced-r-courses" class="level3">
 <h3 class="anchored" data-anchor-id="advanced-r-courses">Advanced R courses</h3>
-<div id="advanced-courses">
+<div id="courses">
 <p>Applied has the following advanced courses:</p>
 <ul>
 <li><strong>Introduction to GIS in R</strong></li>
@@ -685,7 +699,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-Applied Epi is a non-profit organization with 501(c)(3) status registered in Maryland, USA. This work is licensed by Applied Epi Incorporated under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a> for occasional emails. <br>
+Applied Epi is a global non-profit organization registered in Maryland, USA, with 501(c)(3) status. <br> Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC-BY-NC-SA 4.0</a>. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a>. <br>
 <div title="Free SVG Background by BGJar (https://bgjar.com). Icons from FreePik: Worldmap by TuranKen, USA by Three musketeers, Mail by fadlyrusady">
 Hover over this text for design attributions
 </div>

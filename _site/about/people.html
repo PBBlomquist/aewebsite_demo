@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/Applied_Epi_logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -71,20 +72,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-leadership_team .list');
+    const listingTargetEl = window.document.querySelector('#listing-director_team .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-leadership_team'] = new List('listing-leadership_team', options);
+    window['quarto-listings']['listing-director_team'] = new List('listing-director_team', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -107,9 +108,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      page: 30,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+      
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-description","listing-twitter","listing-linkedin","listing-github","listing-personal_website"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -135,10 +135,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
-      page: 30,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-twitter","listing-linkedin","listing-github","listing-personal_website","listing-description"],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-id","listing-image","listing-subtitle","listing-title","listing-description","listing-twitter","listing-linkedin","listing-github","listing-personal_website"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -189,7 +188,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -197,10 +196,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/images/simple_seethrough.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Applied Epi</span>
+    <img src="../assets/images/Applied_Epi_logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -285,36 +281,37 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
     <a href="https://twitter.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://www.linkedin.com/company/appliedepi/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/appliedepi" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-dark hidden"><div class="quarto-announcement-content">
+  <div id="quarto-announcement" data-announcement-id="ce1453a681c75af4a5eac132a0276c30" class="alert alert-danger hidden"><div class="quarto-announcement-content">
 <p><strong>Scholarships open January 20th 2025! Apply by February 10th.</strong> Learn more <a href="..\training/scholarships.html">here</a>.</p>
 </div></div>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
 <section id="leadership" class="level2">
 <h2 class="anchored" data-anchor-id="leadership">Leadership</h2>
-<div id="listing-leadership_team" class="quarto-listing quarto-listing-container-grid">
+<div id="listing-director_team" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-5">
 <div class="g-col-1" data-index="0">
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/neale.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="../assets/images/staff/neale_sq.jpg" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -322,6 +319,9 @@ Executive Director (Co-founder)
 </h5>
 <div class="card-subtitle listing-subtitle">
 Neale Batra
+</div>
+<div class="card-text listing-description">
+Neale co-founded Applied Epi, building on his love of teaching, community, and improving operational emergency response. He previously worked in emergencies and preparedness for WHO, Médecins Sans Frontières, and several US local public health agencies.
 </div>
 </div>
 </div>
@@ -331,7 +331,7 @@ Neale Batra
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/alex_sq.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="../assets/images/staff/alex_sq2.jpg" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -339,6 +339,9 @@ President of Board of Directors (Co-founder)
 </h5>
 <div class="card-subtitle listing-subtitle">
 Alex Spina
+</div>
+<div class="card-text listing-description">
+Alex co-founded Applied Epi to widen access to robust epidemiological analysis methods and tools. He is an epidemiologist and medical doctor who has worked for a variety of national and international public health organisations.
 </div>
 </div>
 </div>
@@ -348,7 +351,7 @@ Alex Spina
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/paula.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="../assets/images/staff/paula_sq.jfif" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -356,6 +359,9 @@ Head of Support
 </h5>
 <div class="card-subtitle listing-subtitle">
 Paula Blomquist
+</div>
+<div class="card-text listing-description">
+Paula directs Applied Epi’ technical projects and code review service. She specializes in surveillance and emergency outberak response, having worked with UKHSA and WHO, and previously deploying internationally with the UK-EMT.
 </div>
 </div>
 </div>
@@ -365,7 +371,7 @@ Paula Blomquist
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/alanah.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="../assets/images/staff/alanah_sq.jpg" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -373,6 +379,9 @@ Head of Training
 </h5>
 <div class="card-subtitle listing-subtitle">
 Alanah Jansen
+</div>
+<div class="card-text listing-description">
+Alanah is Epidemiology Curriculum Lead, and previously led course development and delivery for the Canadian FETP. She brings a wealth of expertise in emergency response and surveillance from her work with Médecins Sans Frontières and northern Canada.
 </div>
 </div>
 </div>
@@ -382,7 +391,7 @@ Alanah Jansen
 <a href="" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img loading="lazy" src="../assets/images/staff/chris.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="../assets/images/staff/chris_sq.jpg" class="thumbnail-image card-img" style="height: 250px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -390,6 +399,9 @@ Head of Operations
 </h5>
 <div class="card-subtitle listing-subtitle">
 Christopher Jarvis
+</div>
+<div class="card-text listing-description">
+As Head of Operations, Chris ensures the smooth running and growth of Applied Epi’s activities. He has a broad background encompassing government service, academia, the private sector, and international humanitarian work.
 </div>
 </div>
 </div>
@@ -401,8 +413,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="team" class="level2">
-<h2 class="anchored" data-anchor-id="team">Team</h2>
+<section id="wider-team" class="level2">
+<h2 class="anchored" data-anchor-id="wider-team">Wider team</h2>
 <!-- Visible only on small screens -->
 <div class="d-block d-md-none">
 <div id="listing-wider_team_mobile" class="quarto-listing quarto-listing-container-table">
@@ -416,6 +428,12 @@ No matching items
         </option>
          <option value="listing-subtitle" data-direction="asc">
           Name
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Role
+        </option>
+         <option value="listing-description" data-direction="asc">
+          About
         </option>
      </select>
   </div>
@@ -431,449 +449,715 @@ No matching items
 <a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
 </th>
 <th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Role</a>
+</th>
+<th>
 <a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">About</a>
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-title-sort="Executive Director (Co-founder)">
+<tr data-index="0" data-listing-title-sort="Operations Coordinator">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/neale.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/olivia.png" style="height: 100px;"></span>
 </td>
 <td>
-<span class="listing-subtitle">Neale Batra</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-title-sort="President of Board of Directors (Co-founder)">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alex_sq.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Alex Spina</span>
-</td>
-</tr>
-<tr data-index="2" data-listing-title-sort="Head of Support">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/paula.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Paula Blomquist</span>
-</td>
-</tr>
-<tr data-index="3" data-listing-title-sort="Head of Training">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alanah.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Alanah Jansen</span>
-</td>
-</tr>
-<tr data-index="4" data-listing-title-sort="Head of Operations">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/chris.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Christopher Jarvis</span>
-</td>
-</tr>
-<tr data-index="5" data-listing-title-sort="Operations Assistant">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/castory.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Castory Munishi</span>
-</td>
-</tr>
-<tr data-index="6" data-listing-title-sort="Translations Coordinator">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luong1.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Luong Nguyen</span>
-</td>
-</tr>
-<tr data-index="7" data-listing-title-sort="Instructor / Epidemiologist">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/berhe.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-subtitle">Berhe Etsay</span>
-</td>
-</tr>
-<tr data-index="8" data-listing-title-sort="Instructor / Support Desk Technician">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/olivia.png" style="height: 125px;"></span>
+<span class="listing-title">Operations Coordinator</span>
 </td>
 <td>
 <span class="listing-subtitle">Olivia Boyd</span>
 </td>
-</tr>
-<tr data-index="9" data-listing-title-sort="Instructor / Field Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/leonel.png" style="height: 125px;"></span>
+<span class="listing-description">Olivia is a bilingual R instructor and Support Desk technician. She completed her PhD at Imperial College London in infectious disease modelling, in which she developed novel phylodynamic methods to monitor disease transmission in the context of emerging and pandemic outbreaks.</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-title-sort="Operations Assistant">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/castory.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Operations Assistant</span>
+</td>
+<td>
+<span class="listing-subtitle">Castory Munishi</span>
+</td>
+<td>
+<span class="listing-description">Castory Munishi loves to teach R, which he uses almost every day to generate insights to address healthcare challenges. He has served as data lead in several multi-disciplinary public health teams.</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-title-sort="Translations Coordinator">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luong1.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Translations Coordinator</span>
+</td>
+<td>
+<span class="listing-subtitle">Luong Nguyen</span>
+</td>
+<td>
+<span class="listing-description">Luong Nguyen is an R instructor and technician from Vietnam, and oversees language translation of Applied Epi resources. In his doctoral studies at Uppsala University, Sweden, he focuses on infectious and zoonotic diseases, risk analysis, and spatial epidemiology within integrative approaches such as One Health and Ecohealth.</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-title-sort="Instructor / Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/berhe.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Epidemiologist</span>
+</td>
+<td>
+<span class="listing-subtitle">Berhe Etsay</span>
+</td>
+<td>
+<span class="listing-description">Berhe is an epidemiologist with 10 years experience as a clinician, lecturer, and public health expert – including four years in emergency response with Médecins Sans Frontières in Ethiopia and South Sudan. He estimates that R has saved 90% of the time he used to spend on data analysis, and is proud to help others experience the same.</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-title-sort="Instructor / Field Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/leonel.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Field Epidemiologist</span>
 </td>
 <td>
 <span class="listing-subtitle">Leonel Lerebours Nadal</span>
 </td>
-</tr>
-<tr data-index="10" data-listing-title-sort="Instructor / Medical Statistician">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mumbua.png" style="height: 125px;"></span>
+<span class="listing-description">Leonel, MD, is a field epidemiologist (FETP) in the Dominican Republic who has worked in the NGO and public sector on HIV/TB since 2007. He has been an instructor for the DR FETP program in EpiInfo and QGIS, and in 2020 fell in love with data science because of R.</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-title-sort="Instructor / Medical Statistician">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mumbua.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Instructor / Medical Statistician</span>
 </td>
 <td>
 <span class="listing-subtitle">Mumbua Mutunga</span>
 </td>
-</tr>
-<tr data-index="11">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pat.png" style="height: 125px;"></span>
+<span class="listing-description">Mumbua Mutunga is an R instructor and medical statistician who has worked with KEMRI and CEMA in Kenya, with particular expertise in rabies surveillance and elimination programs. She is passionate about supporting people to leverage R and other statistical tools to do meaningful work in disease prevention and control.</span>
+</td>
+</tr>
+<tr data-index="6">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pat.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Pat Keating</span>
 </td>
-</tr>
-<tr data-index="12" data-listing-title-sort="Biostatistician / R Programmer">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/christopher.png" style="height: 125px;"></span>
+<span class="listing-description">Patrick is an epidemiologist and has worked as an Epidemiology Advisor for MSF Operational Centre Amsterdam since 2019. He has supported outbreak response and surveillance activities in the DRC, Ethiopia, South Sudan and Sudan. He started learning R in 2015 and is happy to support further uptake of R by epidemiologists worldwide.</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-title-sort="Biostatistician / R Programmer">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/christopher.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Biostatistician / R Programmer</span>
 </td>
 <td>
 <span class="listing-subtitle">Christopher Maronga</span>
 </td>
-</tr>
-<tr data-index="13" data-listing-title-sort="R Instructor">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mara.png" style="height: 125px;"></span>
+<span class="listing-description">Christopher is a biostatistician and R programmer currently at the Centre for Statistics in Medicine, Oxford University. He has broad experience managing and analysing healthcare data for decision-making, as well as teaching introductory and advanced training courses.</span>
+</td>
+</tr>
+<tr data-index="8" data-listing-title-sort="R Instructor">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mara.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">R Instructor</span>
 </td>
 <td>
 <span class="listing-subtitle">Mara Kont</span>
 </td>
-</tr>
-<tr data-index="14">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/aminata.png" style="height: 125px;"></span>
+<span class="listing-description">Mara is an R instructor for French and English courses and supports the R Help Desk. She is a PhD student in infectious disease epidemiology at Imperial College London.</span>
+</td>
+</tr>
+<tr data-index="9">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/aminata.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Aminata Ndiaye</span>
 </td>
-</tr>
-<tr data-index="15">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/lucca.png" style="height: 125px;"></span>
+<span class="listing-description">Aminata is an Epidemiologist-Biostatistician with extensive experience in field outbreak response. She is from Sénégal, leads Applied Epi R courses, and hopes all French-speaking R users benefit from The Epi R Handbook. Saying ‘an R User will always be an R Learner’ she invites you into an eternal learning process. Dal leen ak jàmm! Welcome on board!</span>
+</td>
+</tr>
+<tr data-index="10">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/lucca.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Lucca Nielsen</span>
 </td>
-</tr>
-<tr data-index="16">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luisq.png" style="height: 125px;"></span>
+<span class="listing-description">Lucca is a public health data analyst who has worked several years in state-level epidemiological surveillance in São Paulo, Brazil. His primary focus is respiratory infectious diseases and automated technical reports. He aims to provide valuable data-driven insights and support disease control and decision-making processes in public health.</span>
+</td>
+</tr>
+<tr data-index="11">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luisq.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Luis Quezada</span>
 </td>
-</tr>
-<tr data-index="17">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pragati.png" style="height: 125px;"></span>
+<span class="listing-description">Luis Fernando Quezada is a bioinformatics engineer from Universidad del Valle de Guatemala with training in biostatistics from the Johns Hopkins University. He works for the Health Emergencies Department at PAHO/WHO regional office using R daily for data management, automated reports and surveillance dashboards. He also spent multiple years at PAHO’s Guatemala country office working for the Comprehensive Immunizations Department. He is very passionate about teaching R for public health, epidemiology, statistics, and GIS globally.</span>
+</td>
+</tr>
+<tr data-index="12">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pragati.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Pragati Prasad</span>
 </td>
-</tr>
-<tr data-index="18">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/rafa.png" style="height: 125px;"></span>
+<span class="listing-description">Pragati is an infectious disease epidemiologist with extensive R experience in mathematical and statistical modelling, data management, and report development. Previously, she worked at the US Centers for Disease Control and Prevention for three years building models and reports for pandemic preparedness and response. Pragati is currently an Epidemiology PhD student at Emory University in Atlanta, GA.</span>
+</td>
+</tr>
+<tr data-index="13">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/rafa.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Rafael Ruiz Montero</span>
 </td>
-</tr>
-<tr data-index="19">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/amy_m.png" style="height: 125px;"></span>
+<span class="listing-description">Rafael Ruiz is a medical specialist in Preventive Medicine and Public Health in Spain. Originally from Andalusia, he is currently employed at both the Hospital and University of Córdoba. His professional journey with R commenced during a listeriosis outbreak in his region, and subsequently, he applied that knowledge to the COVID-19 pandemic. He is passionate about automating daily tasks to enhance disease detection.</span>
+</td>
+</tr>
+<tr data-index="14">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/amy_m.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Amy Mikhail</span>
 </td>
-</tr>
-<tr data-index="20">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/jason.png" style="height: 125px;"></span>
+<span class="listing-description">Amy is a field epidemiologist and public health microbiologist (EPIET/EUPHEM alum), with over 15 years of experience in infectious disease programs at regional, national and international levels. Since 2015, she has enjoyed engaging with and supporting new R users, through teaching, mentoring and the development of R learning materials. Currently based in the UK, Amy now works internationally as a freelance consultant.</span>
+</td>
+</tr>
+<tr data-index="15">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/jason.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Vivek Jason Jayaraj</span>
 </td>
-</tr>
-<tr data-index="21">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/alberto.png" style="height: 125px;"></span>
+<span class="listing-description">Jason is an epidemiologist at the Ministry of Health Malaysia with a keen interest in infectious diseases, informatics, and public health. His passion lies in the spatiotemporal modelling of diseases and developing data-driven solutions. An avid R trainer, Jason staunchly believes in leveraging R at grassroots levels to revolutionise health outcomes.</span>
+</td>
+</tr>
+<tr data-index="16">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/alberto.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Alberto Mateo Urdiales</span>
 </td>
-</tr>
-<tr data-index="22">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/abel.png" style="height: 125px;"></span>
+<span class="listing-description">Alberto is a medical doctor specialised in public health and field epidemiology, currently at the National Institute of Public Health in Italy, also teaching field epidemiology and medical statistics. Having learned R seven years ago, he appreciates how it allows more effective and efficient work to tackle emergencies, and believes that helping others to become proficient will be an asset to all global public health.</span>
+</td>
+</tr>
+<tr data-index="17">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/abel.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Abel Khisa</span>
 </td>
-</tr>
-<tr data-index="23">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/shazia.png" style="height: 125px;"></span>
+<span class="listing-description">Abel Khisa is a humanitarian and health data scientist whose work experience spans Somalia, Kenya, CAR, Mali, and Nigeria for a range of humanitarian issues including non-communicable diseases, malnutrition, and antimicrobial resistance (AMR). Abel is passionate about inclusive data technologies and approaches within medical humanitarian work and research. He uses R for web scraping and data analysis for near real-time public health reporting.</span>
+</td>
+</tr>
+<tr data-index="18">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/shazia.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Shazia Ruybal-Pesántez</span>
 </td>
-</tr>
-<tr data-index="24">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/temuulen.png" style="height: 125px;"></span>
+<span class="listing-description">Shazia is an infectious disease genomic epidemiologist based at Imperial College London. Her R expertise spans data management, population genetics, mathematical modelling, automated reporting, and R Shiny app development. Her commitment to the R community extends beyond her research, and prior to joining Applied Epi as an instructor (English and Spanish) she was president and co-organizer of R-Ladies Melbourne Inc.&nbsp;She is passionate about open science, capacity building in R, and the development of advanced digital tools to enhance pathogen surveillance.</span>
+</td>
+</tr>
+<tr data-index="19">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/temuulen.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Temuulen Enebish</span>
 </td>
-</tr>
-<tr data-index="25">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/njoki.png" style="height: 125px;"></span>
+<span class="listing-description">Temuulen is an epidemiologist with expertise ranging from outbreak investigation and infectious disease surveillance to air pollution research and reproductive epidemiology. Based in Mongolia, he has consulted for WHO and the national health agency, including support for the Field Epi Training Program (FETP). He got hooked on R during his doctoral studies at USC, teaches R for Applied Epi, and leads the Mongolian translation team.</span>
+</td>
+</tr>
+<tr data-index="20">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/njoki.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Njoki Njuki</span>
 </td>
-</tr>
-<tr data-index="26" data-listing-title-sort="State-level Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/arran.png" style="height: 125px;"></span>
+<span class="listing-description">Njoki Njuki is a biostatistician and data analyst within the Health Economics and Outcomes Research (HEOR) team at the University of Oxford. Her expertise involves managing and applying advanced statistical techniques to patient data to generate real-world insights. She regularly uses R to create reproducible workflows, ensuring transparency and consistency in her analyses.</span>
+</td>
+</tr>
+<tr data-index="21" data-listing-title-sort="State-level Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/arran.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">State-level Epidemiologist</span>
 </td>
 <td>
 <span class="listing-subtitle">Arran Hamlet</span>
 </td>
-</tr>
-<tr data-index="27">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kennedy.png" style="height: 125px;"></span>
+<span class="listing-description">Arran is a state-level epidemiologist with the US CDC’s Epidemic Intelligence Service (EIS). He has expertise in mathematical modelling having worked for Imperial College London, and has supported outbreak response for WHO and several national ministries of health. Enthusiastic about teaching, he has designed and delivered R workshops for diverse audiences.</span>
+</td>
+</tr>
+<tr data-index="22">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kennedy.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Kennedy Mwai</span>
 </td>
-</tr>
-<tr data-index="28" data-listing-title-sort="Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kelly.png" style="height: 125px;"></span>
+<span class="listing-description">Kennedy Mwai has expertise in analysis of spatial, epidemiological, and high-throughput health data, having worked on projects throughout Kenya. His research focuses on malaria, he has supported health emergency response in Syria, and he enjoys teaching R and reproducible analysis techniques to diverse audiences.</span>
+</td>
+</tr>
+<tr data-index="23" data-listing-title-sort="Epidemiologist">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kelly.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">Epidemiologist</span>
 </td>
 <td>
 <span class="listing-subtitle">Kelly McCain</span>
 </td>
-</tr>
-<tr data-index="29" data-listing-title-sort="R Programmer / Instructor">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+<span class="listing-description">Kelly is an epidemiologist with broad experience using R for spatial epidemiology, field trial data management, and mathematical modelling. She is a current PhD student at Imperial College London modelling the public health impact of malaria vaccines and an R instructor for both French and English courses.</span>
+</td>
+</tr>
+<tr data-index="24" data-listing-title-sort="R Programmer / Instructor">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">R Programmer / Instructor</span>
 </td>
 <td>
 <span class="listing-subtitle">Mathilde Mousset</span>
 </td>
-</tr>
-<tr data-index="30">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/bryan.png" style="height: 125px;"></span>
+<span class="listing-description">Mathilde is an R programmer and instructor with expertise supporting the data management needs of health emergency response in many contexts.</span>
+</td>
+</tr>
+<tr data-index="25">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/bryan.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Bryan Tegomoh</span>
 </td>
-</tr>
-<tr data-index="31">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/des.png" style="height: 125px;"></span>
+<span class="listing-description">Bryan is a Cameroonian-born physician and medical epidemiologist who supports several national and subnational health agencies, particularly with genomics-informed outbreak investigations. He is passionate about pathogen genomics in public health and how findings can be directly translated into policies that impact the lives of vulnerable populations.</span>
+</td>
+</tr>
+<tr data-index="26">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/des.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Desmond Gul</span>
 </td>
-</tr>
-<tr data-index="32">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/steven.png" style="height: 125px;"></span>
+<span class="listing-description">Desmond is an epidemiologist and public health data analyst based in Melbourne, Australia. He uses R extensively and has expertise working with large administrative health and surveillance datasets, automated reporting, infectious disease surveillance and spatiotemporal modelling.</span>
+</td>
+</tr>
+<tr data-index="27">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/steven.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Steven Sola</span>
 </td>
-</tr>
-<tr data-index="33">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+<span class="listing-description">Steven is a PhD Candidate in Environmental Health at Johns Hopkins University. He previously worked as a CSTE Applied Epidemiology Fellow for the New York State Department of Health responding to foodborne outbreaks, measles and COVID-19. He received a master’s degree in Environmental Health and Epidemiology at Emory University and is a Returned Peace Corps Volunteer, having served as an English teacher in Indonesia from 2013-2016.</span>
+</td>
+</tr>
+<tr data-index="28">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Martin Lotto</span>
 </td>
-</tr>
-<tr data-index="34">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/finlay.png" style="height: 125px;"></span>
+<span class="listing-description">Martín is an instructor on Spanish and English courses. He works as a research engineer with the Global Health Resilience group at the Barcelona Supercomputing Center, while pursuing his PhD in Epidemiology at the Hannover Medical School. Additionally, he supports the epidemiology team at BCN Checkpoint. Martín has used his expertise in R to study the impact of environmental and climatic factors on the dynamics of infectious diseases, developing reports and tools to aid public health decision-making.</span>
+</td>
+</tr>
+<tr data-index="29">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/finlay.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Finlay Campbell</span>
 </td>
-</tr>
-<tr data-index="35">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tamara.png" style="height: 125px;"></span>
+<span class="listing-description">Finlay Campbell is an R developer and outbreak analytics consultant at the WHO Health Emergencies Programme in Geneva. He is the lead author of the epicontacts R package, among others.</span>
+</td>
+</tr>
+<tr data-index="30">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/tamara.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Tamara Ricardo</span>
 </td>
-</tr>
-<tr data-index="36">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/moses.png" style="height: 125px;"></span>
+<span class="listing-description">Tamara is a researcher at the National Institute of Epidemiology (INE) in Argentina, where she teaches statistics in intermediate and advanced epidemiology courses. She is a biologist with a PhD in Veterinary Science, with a research focus in disease ecology of leptospirosis in riverside communities. Tamara’s current work primarily involves data processing, statistical analysis, and GIS analysis of observational epidemiology studies.</span>
+</td>
+</tr>
+<tr data-index="31">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/moses.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Moses Musau</span>
 </td>
-</tr>
-<tr data-index="37">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/daniel.png" style="height: 125px;"></span>
+<span class="listing-description">Moses is a Public Health research statistician and R programmer based at KEMRI-Wellcome Trust Research program in Nairobi, Kenya. He has extensive experience in public health data management and analysis using R, with an emphasis on infectious diseases, for public health surveillance to understand disease burden and epidemiology among the population.</span>
+</td>
+</tr>
+<tr data-index="32">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/daniel.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Daniel Suh</span>
 </td>
-</tr>
-<tr data-index="38">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/meenakshi.png" style="height: 125px;"></span>
+<span class="listing-description">Daniel is a postdoctoral researcher at Virginia Tech studying routes of transmission of SARS-CoV-2 into wildlife populations. He completed his doctoral studies at the University of Georgia and is passionate about the use of R for data science and mathematical modeling of infectious diseases.</span>
+</td>
+</tr>
+<tr data-index="33">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/meenakshi.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Meenakshi Kushwaha</span>
 </td>
-</tr>
-<tr data-index="39">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/laurent.png" style="height: 125px;"></span>
+<span class="listing-description">Meenakshi Kushwaha is an environmental health specialist and certified RStudio ‘tidyverse’ instructor. She is a long term consultant with the environmental, climate and urban health division at Vital Strategies where she provides technical support on childhood lead poisoning prevention, air quality and climate change programs in South Asia, Southeast Asia and Sub-Saharan Africa.</span>
+</td>
+</tr>
+<tr data-index="34">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/laurent.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Laurent Lehot</span>
 </td>
-</tr>
-<tr data-index="40">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/callum.png" style="height: 125px;"></span>
+<span class="listing-description">Laurent is a public health engineer, epidemiologist and biostatistician. For 7 years he worked in multiple countries with various humanitarian NGOs, including responding to cholera and Ebola outbreaks. After his master of public health he specialized in spatio-temporal analysis and currently uses his R skills for support to outbreak response, epidemiology, and biostatistical analysis for medical research.</span>
+</td>
+</tr>
+<tr data-index="35">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/callum.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Callum Thirkell</span>
 </td>
-</tr>
-<tr data-index="41">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/janice.png" style="height: 125px;"></span>
+<span class="listing-description">Callum is a former paramedic turned Field Epidemiologist through the Australian FETP. He is based in New Zealand and uses R primarily for national STI surveillance alongside REDCap and SQL. He is experienced in leveraging the use of R throughout the surveillance cycle from data collection to routine reporting. He also works with colleagues at the Department of Health, Papua New Guinea helping coordinate the iFETP. He values the practical use of R for the benefit of frontline field epidemiology and looks forward to expanding this into the Pacific.</span>
+</td>
+</tr>
+<tr data-index="36">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/janice.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Janice Okeke</span>
 </td>
-</tr>
-<tr data-index="42">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/deepak.png" style="height: 125px;"></span>
+<span class="listing-description">Janice is a public health advocate and champion of quality education for all children. She has worked as a CDC Applied Epidemiology Fellow, evaluation specialist, and data analyst at US local and state health departments, and also has experience teaching physical education to students from various backgrounds in US cities.</span>
+</td>
+</tr>
+<tr data-index="37">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/deepak.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Deepak Varughese</span>
 </td>
-</tr>
-<tr data-index="43">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/michael.png" style="height: 125px;"></span>
+<span class="listing-description">Deepak is a primary care doctor and epidemiologist. He has experience working in resource-limited settings in rural and tribal India. He believes data and informatics are powerful tools to be used responsibly keeping in mind that the larger goal remains problem-solving. He thinks R is a great way to deal with the dirty datasets of the real world.</span>
+</td>
+</tr>
+<tr data-index="38">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/michael.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Michael Samuel</span>
 </td>
-</tr>
-<tr data-index="44">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/Isha1.png" style="height: 125px;"></span>
+<span class="listing-description">Michael Samuel is a California public health epidemiologist/biostatistician who has used R extensively for infectious disease investigations and surveillance, burden of disease assessment, and modeling. He has a special interest in visual display of data and has conducted epi software trainings on five continents.</span>
+</td>
+</tr>
+<tr data-index="39">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/Isha1.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Isha Berry</span>
 </td>
-</tr>
-<tr data-index="45">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/henry.png" style="height: 125px;"></span>
+<span class="listing-description">Isha is an epidemiologist with the US CDC’s Epidemic Intelligence Service (EIS). Her doctoral research at the University of Toronto focused on global infectious disease transmission dynamics, particularly between humans and animals. Isha is passionate about open science and science communication.</span>
+</td>
+</tr>
+<tr data-index="40">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/henry.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Henry Laurenson-Schafer</span>
 </td>
-</tr>
-<tr data-index="46">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/luis.png" style="height: 125px;"></span>
+<span class="listing-description">Henry is a data analyst and R Shiny expert in the COVID-19 analytics team of the WHO Health Emergencies Programme. He is an author of the Epi R Handbook and supports Applied Epi Trainings.</span>
+</td>
+</tr>
+<tr data-index="41">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luis.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Luis Hernando Aguilar Ramirez</span>
 </td>
-</tr>
-<tr data-index="47">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/mcewen.png" style="height: 125px;"></span>
+<span class="listing-description">Luis works on knowledge and digital information management in humanitarian response with the UN (WHO, UNOCHA, UNWOMEN, UNMEER) and other organizations in countries including Honduras, Mozambique, Colombia, the Philippines, Sierra Leone, Syria, and Bangladesh. He is involved in digital innovation initiatives for humanitarian response, crowdsourcing, and citizen participation in disaster risk management.</span>
+</td>
+</tr>
+<tr data-index="42">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mcewen.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">McEwen Khundi</span>
 </td>
-</tr>
-<tr data-index="48">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/frank.png" style="height: 125px;"></span>
+<span class="listing-description">McEwen is a spatial epidemiologist whose expertise in R spans TB &amp; HIV prevalence surveys, cohort studies, cluster randomised trials, and Bayesian approaches. He loves teaching R to new learners across medicine and the social sciences, is an RStudio certified tidyverse instructor, and is an RStudio tidyverse certified instructor. Based in Malawi, he is finishing a PhD in medical statistics at LSHTM.</span>
+</td>
+</tr>
+<tr data-index="43">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/frank.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Frank Kagoro</span>
 </td>
-</tr>
-<tr data-index="49">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/juan1.png" style="height: 125px;"></span>
+<span class="listing-description">Frank is a Tanzanian research physician and epidemiologist, and leads the Swahili translation team. He is based at the University of Cape Town, South Africa, researching tools for surveillance of antimalarial drug resistance in South-East Asia and Southern Africa. He is affiliated with the Worldwide Antimalarial Resistance Network (WWARN) and Mahidol Oxford Tropical Medicine Research Unit (MORU), Thailand.</span>
+</td>
+</tr>
+<tr data-index="44">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/juan1.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Juan Carlos F Merino</span>
 </td>
-</tr>
-<tr data-index="50">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tim.png" style="height: 125px;"></span>
+<span class="listing-description">Juan MD, PhD is a specialist in Preventive Medicine and Public Health, and leads the Spanish translation team. He worked in epidemiological surveillance in the regional government of Andalusia, Spain and has taught EpiInfo, EpiMap and outbreak investigations in many courses in Andalusia, the Spanish National Public Health School, the Spanish EIS, etc.</span>
+</td>
+</tr>
+<tr data-index="45">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/tim.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Tim Lee</span>
 </td>
-</tr>
-<tr data-index="51">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/hitomi1.png" style="height: 125px;"></span>
+<span class="listing-description">Tim is a postdoctoral research fellow in Pediatric Infectious Diseases at the Johns Hopkins Hospital. He has been involved with Applied Epi since its inception, supports R training in several languages, and is excited to continue helping increase access to R around the world.</span>
+</td>
+</tr>
+<tr data-index="46">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/hitomi1.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Hitomi Kariya</span>
 </td>
-</tr>
-<tr data-index="52">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/isaac.png" style="height: 125px;"></span>
+<span class="listing-description">Hitomi is an epidemiologist focusing on social determinants of health and community-based interventions. She holds a BA in Social Sciences from Waseda University and MPH in Health Services from the University of Washington. In her spare time, Hitomi leads the Japanese translation team and enjoys jogging, hiking, and traveling.</span>
+</td>
+</tr>
+<tr data-index="47">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/isaac.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Isaac Florence</span>
 </td>
-</tr>
-<tr data-index="53">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/omer.png" style="height: 125px;"></span>
+<span class="listing-description">Isaac is Principal Epidemiology Data Scientist at the UK Health Security Agency, working across epidemiology analytics, data engineering and software engineering. This work focuses on automation, big data, and use of High-Performance Computing infrastructure (mostly in R).</span>
+</td>
+</tr>
+<tr data-index="48">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/omer.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Abdullah Ömer Şeker</span>
 </td>
-</tr>
-<tr data-index="54">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/calder.png" style="height: 125px;"></span>
+<span class="listing-description">Omer, MD, MPH is the lead of the Turkish translation. He is an epidemiologist, with experience in medico-marketing, bioinformatics and clinical trials. Currently working as Real-World Evidence manager for IQVIA. He is focused on personalized medicine and big data analytics.</span>
+</td>
+</tr>
+<tr data-index="49">
+<td>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/calder.png" style="height: 100px;"></span>
+</td>
+<td>
+<span class="listing-title">&nbsp;</span>
 </td>
 <td>
 <span class="listing-subtitle">Calder Fong</span>
+</td>
+<td>
+<span class="listing-description">Calder is the team’s resident artist.</span>
 </td>
 </tr>
 </tbody>
@@ -881,9 +1165,6 @@ No matching items
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="wider_team_mobile-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div>
 </div>
 <!-- Visible only on medium and larger screens -->
@@ -931,79 +1212,23 @@ No matching items
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-title-sort="Executive Director (Co-founder)">
+<tr data-index="0" data-listing-title-sort="Operations Coordinator">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/neale.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/olivia.png" style="height: 100px;"></span>
 </td>
 <td>
-<span class="listing-title">Executive Director (Co-founder)</span>
+<span class="listing-title">Operations Coordinator</span>
 </td>
 <td>
-<span class="listing-subtitle">Neale Batra</span>
+<span class="listing-subtitle">Olivia Boyd</span>
 </td>
 <td>
-<span class="listing-description">Neale is an epidemiologist who works to improve operational emergency response. He loves teaching, building community, and values public service. Prior to co-founding Applied Epi, he worked in emergencies and preparedness for WHO, Médecins Sans Frontières, and several US local public health agencies.</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-title-sort="President of Board of Directors (Co-founder)">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alex_sq.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-title">President of Board of Directors (Co-founder)</span>
-</td>
-<td>
-<span class="listing-subtitle">Alex Spina</span>
-</td>
-<td>
-<span class="listing-description">Alex co-founded Applied Epi to widen access to robust epidemiological analysis methods and tools. He is an epidemiologist who has consulted for a variety of national and international health emergency response organisations, and is a medical doctor.</span>
+<span class="listing-description">Olivia is a bilingual R instructor and Support Desk technician. She completed her PhD at Imperial College London in infectious disease modelling, in which she developed novel phylodynamic methods to monitor disease transmission in the context of emerging and pandemic outbreaks.</span>
 </td>
 </tr>
-<tr data-index="2" data-listing-title-sort="Head of Support">
+<tr data-index="1" data-listing-title-sort="Operations Assistant">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/paula.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-title">Head of Support</span>
-</td>
-<td>
-<span class="listing-subtitle">Paula Blomquist</span>
-</td>
-<td>
-<span class="listing-description">Paula leads the Epidemiology Support pillar, overseeing Applied Epi’s 24/7 Support Desk and extended technical support projects for public health agencies. Previously, Paula was a principal epidemiologist in the UK Health Security Agency, has supported WHO with emergency response, and deployed to epidemic responses with the UK Emergency Medical Team.</span>
-</td>
-</tr>
-<tr data-index="3" data-listing-title-sort="Head of Training">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/alanah.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-title">Head of Training</span>
-</td>
-<td>
-<span class="listing-subtitle">Alanah Jansen</span>
-</td>
-<td>
-<span class="listing-description">Alanah Jansen is the Epidemiology Curriculum Lead for Applied Epi. She played a key role in course development and delivery for the Canadian Field Epidemiology Training Program, and brings a wealth of experience in emergency response and surveillance honed through her work with Médecins Sans Frontières and in northern Canada. She is excited to make high-quality training opportunities more accessible to a wider audience.</span>
-</td>
-</tr>
-<tr data-index="4" data-listing-title-sort="Head of Operations">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/chris.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-title">Head of Operations</span>
-</td>
-<td>
-<span class="listing-subtitle">Christopher Jarvis</span>
-</td>
-<td>
-<span class="listing-description">Chris has a broad background encompassing government service, academia, the private sector, and international humanitarian work. He has worked as an epidemiologist in the UK Government, served as a faculty member at the London School of Hygiene and Tropical Medicine, led multiple Humanitarian deployments, and provided consulting services across various sectors. At Applied Epi, Chris leads operational efforts, ensuring the execution and growth of programs that support epidemiological practice and training on a global scale.</span>
-</td>
-</tr>
-<tr data-index="5" data-listing-title-sort="Operations Assistant">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/castory.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/castory.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Operations Assistant</span>
@@ -1015,9 +1240,9 @@ No matching items
 <span class="listing-description">Castory Munishi loves to teach R, which he uses almost every day to generate insights to address healthcare challenges. He has served as data lead in several multi-disciplinary public health teams.</span>
 </td>
 </tr>
-<tr data-index="6" data-listing-title-sort="Translations Coordinator">
+<tr data-index="2" data-listing-title-sort="Translations Coordinator">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luong1.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luong1.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Translations Coordinator</span>
@@ -1029,9 +1254,9 @@ No matching items
 <span class="listing-description">Luong Nguyen is an R instructor and technician from Vietnam, and oversees language translation of Applied Epi resources. In his doctoral studies at Uppsala University, Sweden, he focuses on infectious and zoonotic diseases, risk analysis, and spatial epidemiology within integrative approaches such as One Health and Ecohealth.</span>
 </td>
 </tr>
-<tr data-index="7" data-listing-title-sort="Instructor / Epidemiologist">
+<tr data-index="3" data-listing-title-sort="Instructor / Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/berhe.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/berhe.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Instructor / Epidemiologist</span>
@@ -1043,23 +1268,9 @@ No matching items
 <span class="listing-description">Berhe is an epidemiologist with 10 years experience as a clinician, lecturer, and public health expert – including four years in emergency response with Médecins Sans Frontières in Ethiopia and South Sudan. He estimates that R has saved 90% of the time he used to spend on data analysis, and is proud to help others experience the same.</span>
 </td>
 </tr>
-<tr data-index="8" data-listing-title-sort="Instructor / Support Desk Technician">
+<tr data-index="4" data-listing-title-sort="Instructor / Field Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/olivia.png" style="height: 125px;"></span>
-</td>
-<td>
-<span class="listing-title">Instructor / Support Desk Technician</span>
-</td>
-<td>
-<span class="listing-subtitle">Olivia Boyd</span>
-</td>
-<td>
-<span class="listing-description">Olivia is a bilingual R instructor and Support Desk technician. She completed her PhD at Imperial College London in infectious disease modelling, in which she developed novel phylodynamic methods to monitor disease transmission in the context of emerging and pandemic outbreaks.</span>
-</td>
-</tr>
-<tr data-index="9" data-listing-title-sort="Instructor / Field Epidemiologist">
-<td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/leonel.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/leonel.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Instructor / Field Epidemiologist</span>
@@ -1071,9 +1282,9 @@ No matching items
 <span class="listing-description">Leonel, MD, is a field epidemiologist (FETP) in the Dominican Republic who has worked in the NGO and public sector on HIV/TB since 2007. He has been an instructor for the DR FETP program in EpiInfo and QGIS, and in 2020 fell in love with data science because of R.</span>
 </td>
 </tr>
-<tr data-index="10" data-listing-title-sort="Instructor / Medical Statistician">
+<tr data-index="5" data-listing-title-sort="Instructor / Medical Statistician">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mumbua.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mumbua.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Instructor / Medical Statistician</span>
@@ -1085,9 +1296,9 @@ No matching items
 <span class="listing-description">Mumbua Mutunga is an R instructor and medical statistician who has worked with KEMRI and CEMA in Kenya, with particular expertise in rabies surveillance and elimination programs. She is passionate about supporting people to leverage R and other statistical tools to do meaningful work in disease prevention and control.</span>
 </td>
 </tr>
-<tr data-index="11">
+<tr data-index="6">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pat.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pat.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1099,9 +1310,9 @@ No matching items
 <span class="listing-description">Patrick is an epidemiologist and has worked as an Epidemiology Advisor for MSF Operational Centre Amsterdam since 2019. He has supported outbreak response and surveillance activities in the DRC, Ethiopia, South Sudan and Sudan. He started learning R in 2015 and is happy to support further uptake of R by epidemiologists worldwide.</span>
 </td>
 </tr>
-<tr data-index="12" data-listing-title-sort="Biostatistician / R Programmer">
+<tr data-index="7" data-listing-title-sort="Biostatistician / R Programmer">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/christopher.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/christopher.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Biostatistician / R Programmer</span>
@@ -1113,9 +1324,9 @@ No matching items
 <span class="listing-description">Christopher is a biostatistician and R programmer currently at the Centre for Statistics in Medicine, Oxford University. He has broad experience managing and analysing healthcare data for decision-making, as well as teaching introductory and advanced training courses.</span>
 </td>
 </tr>
-<tr data-index="13" data-listing-title-sort="R Instructor">
+<tr data-index="8" data-listing-title-sort="R Instructor">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mara.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mara.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">R Instructor</span>
@@ -1127,9 +1338,9 @@ No matching items
 <span class="listing-description">Mara is an R instructor for French and English courses and supports the R Help Desk. She is a PhD student in infectious disease epidemiology at Imperial College London.</span>
 </td>
 </tr>
-<tr data-index="14">
+<tr data-index="9">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/aminata.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/aminata.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1141,9 +1352,9 @@ No matching items
 <span class="listing-description">Aminata is an Epidemiologist-Biostatistician with extensive experience in field outbreak response. She is from Sénégal, leads Applied Epi R courses, and hopes all French-speaking R users benefit from The Epi R Handbook. Saying ‘an R User will always be an R Learner’ she invites you into an eternal learning process. Dal leen ak jàmm! Welcome on board!</span>
 </td>
 </tr>
-<tr data-index="15">
+<tr data-index="10">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/lucca.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/lucca.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1155,9 +1366,9 @@ No matching items
 <span class="listing-description">Lucca is a public health data analyst who has worked several years in state-level epidemiological surveillance in São Paulo, Brazil. His primary focus is respiratory infectious diseases and automated technical reports. He aims to provide valuable data-driven insights and support disease control and decision-making processes in public health.</span>
 </td>
 </tr>
-<tr data-index="16">
+<tr data-index="11">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luisq.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luisq.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1169,9 +1380,9 @@ No matching items
 <span class="listing-description">Luis Fernando Quezada is a bioinformatics engineer from Universidad del Valle de Guatemala with training in biostatistics from the Johns Hopkins University. He works for the Health Emergencies Department at PAHO/WHO regional office using R daily for data management, automated reports and surveillance dashboards. He also spent multiple years at PAHO’s Guatemala country office working for the Comprehensive Immunizations Department. He is very passionate about teaching R for public health, epidemiology, statistics, and GIS globally.</span>
 </td>
 </tr>
-<tr data-index="17">
+<tr data-index="12">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pragati.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/pragati.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1183,9 +1394,9 @@ No matching items
 <span class="listing-description">Pragati is an infectious disease epidemiologist with extensive R experience in mathematical and statistical modelling, data management, and report development. Previously, she worked at the US Centers for Disease Control and Prevention for three years building models and reports for pandemic preparedness and response. Pragati is currently an Epidemiology PhD student at Emory University in Atlanta, GA.</span>
 </td>
 </tr>
-<tr data-index="18">
+<tr data-index="13">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/rafa.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/rafa.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1197,9 +1408,9 @@ No matching items
 <span class="listing-description">Rafael Ruiz is a medical specialist in Preventive Medicine and Public Health in Spain. Originally from Andalusia, he is currently employed at both the Hospital and University of Córdoba. His professional journey with R commenced during a listeriosis outbreak in his region, and subsequently, he applied that knowledge to the COVID-19 pandemic. He is passionate about automating daily tasks to enhance disease detection.</span>
 </td>
 </tr>
-<tr data-index="19">
+<tr data-index="14">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/amy_m.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/amy_m.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1211,9 +1422,9 @@ No matching items
 <span class="listing-description">Amy is a field epidemiologist and public health microbiologist (EPIET/EUPHEM alum), with over 15 years of experience in infectious disease programs at regional, national and international levels. Since 2015, she has enjoyed engaging with and supporting new R users, through teaching, mentoring and the development of R learning materials. Currently based in the UK, Amy now works internationally as a freelance consultant.</span>
 </td>
 </tr>
-<tr data-index="20">
+<tr data-index="15">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/jason.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/jason.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1225,9 +1436,9 @@ No matching items
 <span class="listing-description">Jason is an epidemiologist at the Ministry of Health Malaysia with a keen interest in infectious diseases, informatics, and public health. His passion lies in the spatiotemporal modelling of diseases and developing data-driven solutions. An avid R trainer, Jason staunchly believes in leveraging R at grassroots levels to revolutionise health outcomes.</span>
 </td>
 </tr>
-<tr data-index="21">
+<tr data-index="16">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/alberto.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/alberto.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1239,9 +1450,9 @@ No matching items
 <span class="listing-description">Alberto is a medical doctor specialised in public health and field epidemiology, currently at the National Institute of Public Health in Italy, also teaching field epidemiology and medical statistics. Having learned R seven years ago, he appreciates how it allows more effective and efficient work to tackle emergencies, and believes that helping others to become proficient will be an asset to all global public health.</span>
 </td>
 </tr>
-<tr data-index="22">
+<tr data-index="17">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/abel.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/abel.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1253,9 +1464,9 @@ No matching items
 <span class="listing-description">Abel Khisa is a humanitarian and health data scientist whose work experience spans Somalia, Kenya, CAR, Mali, and Nigeria for a range of humanitarian issues including non-communicable diseases, malnutrition, and antimicrobial resistance (AMR). Abel is passionate about inclusive data technologies and approaches within medical humanitarian work and research. He uses R for web scraping and data analysis for near real-time public health reporting.</span>
 </td>
 </tr>
-<tr data-index="23">
+<tr data-index="18">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/shazia.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/shazia.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1267,9 +1478,9 @@ No matching items
 <span class="listing-description">Shazia is an infectious disease genomic epidemiologist based at Imperial College London. Her R expertise spans data management, population genetics, mathematical modelling, automated reporting, and R Shiny app development. Her commitment to the R community extends beyond her research, and prior to joining Applied Epi as an instructor (English and Spanish) she was president and co-organizer of R-Ladies Melbourne Inc.&nbsp;She is passionate about open science, capacity building in R, and the development of advanced digital tools to enhance pathogen surveillance.</span>
 </td>
 </tr>
-<tr data-index="24">
+<tr data-index="19">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/temuulen.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/temuulen.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1281,9 +1492,9 @@ No matching items
 <span class="listing-description">Temuulen is an epidemiologist with expertise ranging from outbreak investigation and infectious disease surveillance to air pollution research and reproductive epidemiology. Based in Mongolia, he has consulted for WHO and the national health agency, including support for the Field Epi Training Program (FETP). He got hooked on R during his doctoral studies at USC, teaches R for Applied Epi, and leads the Mongolian translation team.</span>
 </td>
 </tr>
-<tr data-index="25">
+<tr data-index="20">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/njoki.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/njoki.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1295,9 +1506,9 @@ No matching items
 <span class="listing-description">Njoki Njuki is a biostatistician and data analyst within the Health Economics and Outcomes Research (HEOR) team at the University of Oxford. Her expertise involves managing and applying advanced statistical techniques to patient data to generate real-world insights. She regularly uses R to create reproducible workflows, ensuring transparency and consistency in her analyses.</span>
 </td>
 </tr>
-<tr data-index="26" data-listing-title-sort="State-level Epidemiologist">
+<tr data-index="21" data-listing-title-sort="State-level Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/arran.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/arran.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">State-level Epidemiologist</span>
@@ -1309,9 +1520,9 @@ No matching items
 <span class="listing-description">Arran is a state-level epidemiologist with the US CDC’s Epidemic Intelligence Service (EIS). He has expertise in mathematical modelling having worked for Imperial College London, and has supported outbreak response for WHO and several national ministries of health. Enthusiastic about teaching, he has designed and delivered R workshops for diverse audiences.</span>
 </td>
 </tr>
-<tr data-index="27">
+<tr data-index="22">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kennedy.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kennedy.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1323,9 +1534,9 @@ No matching items
 <span class="listing-description">Kennedy Mwai has expertise in analysis of spatial, epidemiological, and high-throughput health data, having worked on projects throughout Kenya. His research focuses on malaria, he has supported health emergency response in Syria, and he enjoys teaching R and reproducible analysis techniques to diverse audiences.</span>
 </td>
 </tr>
-<tr data-index="28" data-listing-title-sort="Epidemiologist">
+<tr data-index="23" data-listing-title-sort="Epidemiologist">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kelly.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/kelly.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">Epidemiologist</span>
@@ -1337,9 +1548,9 @@ No matching items
 <span class="listing-description">Kelly is an epidemiologist with broad experience using R for spatial epidemiology, field trial data management, and mathematical modelling. She is a current PhD student at Imperial College London modelling the public health impact of malaria vaccines and an R instructor for both French and English courses.</span>
 </td>
 </tr>
-<tr data-index="29" data-listing-title-sort="R Programmer / Instructor">
+<tr data-index="24" data-listing-title-sort="R Programmer / Instructor">
 <td>
-<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">R Programmer / Instructor</span>
@@ -1351,9 +1562,9 @@ No matching items
 <span class="listing-description">Mathilde is an R programmer and instructor with expertise supporting the data management needs of health emergency response in many contexts.</span>
 </td>
 </tr>
-<tr data-index="30">
+<tr data-index="25">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/bryan.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/bryan.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1365,9 +1576,9 @@ No matching items
 <span class="listing-description">Bryan is a Cameroonian-born physician and medical epidemiologist who supports several national and subnational health agencies, particularly with genomics-informed outbreak investigations. He is passionate about pathogen genomics in public health and how findings can be directly translated into policies that impact the lives of vulnerable populations.</span>
 </td>
 </tr>
-<tr data-index="31">
+<tr data-index="26">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/des.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/des.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1379,9 +1590,9 @@ No matching items
 <span class="listing-description">Desmond is an epidemiologist and public health data analyst based in Melbourne, Australia. He uses R extensively and has expertise working with large administrative health and surveillance datasets, automated reporting, infectious disease surveillance and spatiotemporal modelling.</span>
 </td>
 </tr>
-<tr data-index="32">
+<tr data-index="27">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/steven.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/steven.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1393,9 +1604,9 @@ No matching items
 <span class="listing-description">Steven is a PhD Candidate in Environmental Health at Johns Hopkins University. He previously worked as a CSTE Applied Epidemiology Fellow for the New York State Department of Health responding to foodborne outbreaks, measles and COVID-19. He received a master’s degree in Environmental Health and Epidemiology at Emory University and is a Returned Peace Corps Volunteer, having served as an English teacher in Indonesia from 2013-2016.</span>
 </td>
 </tr>
-<tr data-index="33">
+<tr data-index="28">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/icon-testimonial-anon.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1407,9 +1618,9 @@ No matching items
 <span class="listing-description">Martín is an instructor on Spanish and English courses. He works as a research engineer with the Global Health Resilience group at the Barcelona Supercomputing Center, while pursuing his PhD in Epidemiology at the Hannover Medical School. Additionally, he supports the epidemiology team at BCN Checkpoint. Martín has used his expertise in R to study the impact of environmental and climatic factors on the dynamics of infectious diseases, developing reports and tools to aid public health decision-making.</span>
 </td>
 </tr>
-<tr data-index="34">
+<tr data-index="29">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/finlay.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/finlay.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1421,9 +1632,9 @@ No matching items
 <span class="listing-description">Finlay Campbell is an R developer and outbreak analytics consultant at the WHO Health Emergencies Programme in Geneva. He is the lead author of the epicontacts R package, among others.</span>
 </td>
 </tr>
-<tr data-index="35">
+<tr data-index="30">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tamara.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/tamara.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1435,9 +1646,9 @@ No matching items
 <span class="listing-description">Tamara is a researcher at the National Institute of Epidemiology (INE) in Argentina, where she teaches statistics in intermediate and advanced epidemiology courses. She is a biologist with a PhD in Veterinary Science, with a research focus in disease ecology of leptospirosis in riverside communities. Tamara’s current work primarily involves data processing, statistical analysis, and GIS analysis of observational epidemiology studies.</span>
 </td>
 </tr>
-<tr data-index="36">
+<tr data-index="31">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/moses.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/moses.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1449,9 +1660,9 @@ No matching items
 <span class="listing-description">Moses is a Public Health research statistician and R programmer based at KEMRI-Wellcome Trust Research program in Nairobi, Kenya. He has extensive experience in public health data management and analysis using R, with an emphasis on infectious diseases, for public health surveillance to understand disease burden and epidemiology among the population.</span>
 </td>
 </tr>
-<tr data-index="37">
+<tr data-index="32">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/daniel.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/daniel.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1463,9 +1674,9 @@ No matching items
 <span class="listing-description">Daniel is a postdoctoral researcher at Virginia Tech studying routes of transmission of SARS-CoV-2 into wildlife populations. He completed his doctoral studies at the University of Georgia and is passionate about the use of R for data science and mathematical modeling of infectious diseases.</span>
 </td>
 </tr>
-<tr data-index="38">
+<tr data-index="33">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/meenakshi.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/meenakshi.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1477,9 +1688,9 @@ No matching items
 <span class="listing-description">Meenakshi Kushwaha is an environmental health specialist and certified RStudio ‘tidyverse’ instructor. She is a long term consultant with the environmental, climate and urban health division at Vital Strategies where she provides technical support on childhood lead poisoning prevention, air quality and climate change programs in South Asia, Southeast Asia and Sub-Saharan Africa.</span>
 </td>
 </tr>
-<tr data-index="39">
+<tr data-index="34">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/laurent.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/laurent.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1491,9 +1702,9 @@ No matching items
 <span class="listing-description">Laurent is a public health engineer, epidemiologist and biostatistician. For 7 years he worked in multiple countries with various humanitarian NGOs, including responding to cholera and Ebola outbreaks. After his master of public health he specialized in spatio-temporal analysis and currently uses his R skills for support to outbreak response, epidemiology, and biostatistical analysis for medical research.</span>
 </td>
 </tr>
-<tr data-index="40">
+<tr data-index="35">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/callum.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/callum.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1505,9 +1716,9 @@ No matching items
 <span class="listing-description">Callum is a former paramedic turned Field Epidemiologist through the Australian FETP. He is based in New Zealand and uses R primarily for national STI surveillance alongside REDCap and SQL. He is experienced in leveraging the use of R throughout the surveillance cycle from data collection to routine reporting. He also works with colleagues at the Department of Health, Papua New Guinea helping coordinate the iFETP. He values the practical use of R for the benefit of frontline field epidemiology and looks forward to expanding this into the Pacific.</span>
 </td>
 </tr>
-<tr data-index="41">
+<tr data-index="36">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/janice.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/janice.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1519,9 +1730,9 @@ No matching items
 <span class="listing-description">Janice is a public health advocate and champion of quality education for all children. She has worked as a CDC Applied Epidemiology Fellow, evaluation specialist, and data analyst at US local and state health departments, and also has experience teaching physical education to students from various backgrounds in US cities.</span>
 </td>
 </tr>
-<tr data-index="42">
+<tr data-index="37">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/deepak.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/deepak.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1533,9 +1744,9 @@ No matching items
 <span class="listing-description">Deepak is a primary care doctor and epidemiologist. He has experience working in resource-limited settings in rural and tribal India. He believes data and informatics are powerful tools to be used responsibly keeping in mind that the larger goal remains problem-solving. He thinks R is a great way to deal with the dirty datasets of the real world.</span>
 </td>
 </tr>
-<tr data-index="43">
+<tr data-index="38">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/michael.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/michael.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1547,9 +1758,9 @@ No matching items
 <span class="listing-description">Michael Samuel is a California public health epidemiologist/biostatistician who has used R extensively for infectious disease investigations and surveillance, burden of disease assessment, and modeling. He has a special interest in visual display of data and has conducted epi software trainings on five continents.</span>
 </td>
 </tr>
-<tr data-index="44">
+<tr data-index="39">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/Isha1.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/Isha1.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1561,9 +1772,9 @@ No matching items
 <span class="listing-description">Isha is an epidemiologist with the US CDC’s Epidemic Intelligence Service (EIS). Her doctoral research at the University of Toronto focused on global infectious disease transmission dynamics, particularly between humans and animals. Isha is passionate about open science and science communication.</span>
 </td>
 </tr>
-<tr data-index="45">
+<tr data-index="40">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/henry.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/henry.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1575,9 +1786,9 @@ No matching items
 <span class="listing-description">Henry is a data analyst and R Shiny expert in the COVID-19 analytics team of the WHO Health Emergencies Programme. He is an author of the Epi R Handbook and supports Applied Epi Trainings.</span>
 </td>
 </tr>
-<tr data-index="46">
+<tr data-index="41">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/luis.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/luis.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1589,9 +1800,9 @@ No matching items
 <span class="listing-description">Luis works on knowledge and digital information management in humanitarian response with the UN (WHO, UNOCHA, UNWOMEN, UNMEER) and other organizations in countries including Honduras, Mozambique, Colombia, the Philippines, Sierra Leone, Syria, and Bangladesh. He is involved in digital innovation initiatives for humanitarian response, crowdsourcing, and citizen participation in disaster risk management.</span>
 </td>
 </tr>
-<tr data-index="47">
+<tr data-index="42">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/mcewen.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/mcewen.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1603,9 +1814,9 @@ No matching items
 <span class="listing-description">McEwen is a spatial epidemiologist whose expertise in R spans TB &amp; HIV prevalence surveys, cohort studies, cluster randomised trials, and Bayesian approaches. He loves teaching R to new learners across medicine and the social sciences, is an RStudio certified tidyverse instructor, and is an RStudio tidyverse certified instructor. Based in Malawi, he is finishing a PhD in medical statistics at LSHTM.</span>
 </td>
 </tr>
-<tr data-index="48">
+<tr data-index="43">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/frank.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/frank.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1617,9 +1828,9 @@ No matching items
 <span class="listing-description">Frank is a Tanzanian research physician and epidemiologist, and leads the Swahili translation team. He is based at the University of Cape Town, South Africa, researching tools for surveillance of antimalarial drug resistance in South-East Asia and Southern Africa. He is affiliated with the Worldwide Antimalarial Resistance Network (WWARN) and Mahidol Oxford Tropical Medicine Research Unit (MORU), Thailand.</span>
 </td>
 </tr>
-<tr data-index="49">
+<tr data-index="44">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/juan1.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/juan1.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1631,9 +1842,9 @@ No matching items
 <span class="listing-description">Juan MD, PhD is a specialist in Preventive Medicine and Public Health, and leads the Spanish translation team. He worked in epidemiological surveillance in the regional government of Andalusia, Spain and has taught EpiInfo, EpiMap and outbreak investigations in many courses in Andalusia, the Spanish National Public Health School, the Spanish EIS, etc.</span>
 </td>
 </tr>
-<tr data-index="50">
+<tr data-index="45">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/tim.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/tim.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1645,9 +1856,9 @@ No matching items
 <span class="listing-description">Tim is a postdoctoral research fellow in Pediatric Infectious Diseases at the Johns Hopkins Hospital. He has been involved with Applied Epi since its inception, supports R training in several languages, and is excited to continue helping increase access to R around the world.</span>
 </td>
 </tr>
-<tr data-index="51">
+<tr data-index="46">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/hitomi1.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/hitomi1.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1659,9 +1870,9 @@ No matching items
 <span class="listing-description">Hitomi is an epidemiologist focusing on social determinants of health and community-based interventions. She holds a BA in Social Sciences from Waseda University and MPH in Health Services from the University of Washington. In her spare time, Hitomi leads the Japanese translation team and enjoys jogging, hiking, and traveling.</span>
 </td>
 </tr>
-<tr data-index="52">
+<tr data-index="47">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/isaac.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/isaac.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1673,9 +1884,9 @@ No matching items
 <span class="listing-description">Isaac is Principal Epidemiology Data Scientist at the UK Health Security Agency, working across epidemiology analytics, data engineering and software engineering. This work focuses on automation, big data, and use of High-Performance Computing infrastructure (mostly in R).</span>
 </td>
 </tr>
-<tr data-index="53">
+<tr data-index="48">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/omer.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/omer.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1687,9 +1898,9 @@ No matching items
 <span class="listing-description">Omer, MD, MPH is the lead of the Turkish translation. He is an epidemiologist, with experience in medico-marketing, bioinformatics and clinical trials. Currently working as Real-World Evidence manager for IQVIA. He is focused on personalized medicine and big data analytics.</span>
 </td>
 </tr>
-<tr data-index="54">
+<tr data-index="49">
 <td>
-<span class="listing-image"><img loading="lazy" data-src="../assets/images/staff/wider-team/calder.png" style="height: 125px;"></span>
+<span class="listing-image"><img loading="lazy" src="../assets/images/staff/wider-team/calder.png" style="height: 100px;"></span>
 </td>
 <td>
 <span class="listing-title">&nbsp;</span>
@@ -1706,9 +1917,6 @@ No matching items
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="wider_team-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div>
 </div>
 
@@ -2141,7 +2349,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-Applied Epi is a non-profit organization with 501(c)(3) status registered in Maryland, USA. This work is licensed by Applied Epi Incorporated under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a> for occasional emails. <br>
+Applied Epi is a global non-profit organization registered in Maryland, USA, with 501(c)(3) status. <br> Content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC-BY-NC-SA 4.0</a>. <br> Email us at contact@appliedepi.org or <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtk7Mg32lYQ3ucbIM-kIwIRxgRwDfG5TJHsVAbFjQ1i6fwiw/viewform">join our contact list</a>. <br>
 <div title="Free SVG Background by BGJar (https://bgjar.com). Icons from FreePik: Worldmap by TuranKen, USA by Three musketeers, Mail by fadlyrusady">
 Hover over this text for design attributions
 </div>

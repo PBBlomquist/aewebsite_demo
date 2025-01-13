@@ -58,7 +58,18 @@ body {
 
 /* Nav bar background */
 .navbar {
-  background-color: #2D4E8E; 
+  background-color: #2D4E8E;   
+  padding: 0; 
+  margin: 0; 
+  line-height: 0; /* Reduce spacing caused by line height */
+}
+
+
+/* Nav bar logo size */
+.navbar-logo {
+  max-height: 40px;
+  vertical-align: middle; /* Center-align the logo vertically */
+  padding: 0;
 }
 
 
@@ -69,6 +80,7 @@ body {
   padding: 10px;
   
 }
+
 
 /* Hover state */
 .navbar a:hover, .navbar .nav-link.active:hover {
@@ -107,15 +119,9 @@ body {
 }
 
 
-/* doesn't work? */
 .quarto-announcement-content {
   text-align: center;
   font-size: 16px;
   color: black;
   width: 100%;
-}
-
-.navbar-brand a {
-  max-height: 100px;
-  padding: 0px;
 }
